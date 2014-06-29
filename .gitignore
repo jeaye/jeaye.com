@@ -1,0 +1,7 @@
+ # Scary files
+.htaccess
+php.ini
+cgi-bin
+
+# Local working files (GIMP projects, etc)
+local/
