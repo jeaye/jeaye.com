@@ -6,7 +6,7 @@ ol#toc {
 }
 
 ol#toc a {
-  background: url/img/tabs.png);
+  background: url(/img/tabs.png);
   background-size: 100% 500%;
   color: #000;
   display: block;
