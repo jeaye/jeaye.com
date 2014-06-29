@@ -6,7 +6,7 @@ ol#toc {
 }
 
 ol#toc a {
-  background: url(/dev/img/tabs.png);
+  background: url/img/tabs.png);
   background-size: 100% 500%;
   color: #000;
   display: block;
@@ -41,7 +41,7 @@ ol#toc li.current span {
 }
 
 ol#toc span {
-  /*background: url(/dev/img/tabs.png) 100% auto;*/
+  /*background: url(/img/tabs.png) 100% auto;*/
   display: block;
   padding-right: 10px;
 }
