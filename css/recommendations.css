@@ -17,10 +17,6 @@
   background-position: bottom right;
 }
 
-.quote_name {
-  font-size: 1.5em;
-}
-
 .quote_photo {
   position: absolute;
   display: inline-block;
