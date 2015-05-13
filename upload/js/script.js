@@ -13,7 +13,7 @@ var whitelist =
   'sh',
   'txt',
   'png', 'jpg', 'bmp',
-  'zip', 'rar', 'gz', 'bz2', 'tar',
+  'zip', 'rar', 'gz', 'bz2', 'tar', 'tar.gz',
   'pdf', 'doc', 'docx', 'epub', 'mobi',
   'xml',
   'ogg', 'ogv'
