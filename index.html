@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html> 
+<html>
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="icon" 
-    type="image/png" 
+    <link rel="icon"
+    type="image/png"
     href="img/favicon.png">
 
     <title>Jeaye | Timeline</title>
@@ -85,12 +85,9 @@
             <div itemscope itemtype="http://schema.org/Event">March 2015 &ndash; Present</div>
           </div>
           <div class="description">
-            <p>Lead engineer for multiple unreleased Android/iOS mobile games.</p>
-            <p>Stack: C++14, Boost, Crow, C#, Unity 5, SQLite3</p>
-            <ul>
-              <li>Implemented native servers, providing RESTful APIs</li>
-              <li>Designed asynchronous interfaces for client-side tasks</li>
-            </ul>
+            <p>I was the lead developer on multiple Android and iOS games, covering the client-side game play as well as implementing the entire back end. All client-side work was done using Unity 5; I spent a great deal of time working in C#, designing type-safe, asynchronous APIs. The back end work was all done in C++14, using Crow, a multi-threaded micro web framework for modern C++.</p>
+
+            <p>Some interesting systems I designed and implemented include a type-safe notification system and a procedural music generator using common Jazz progressions and Markov chains.</p>
           </div>
           </section>
           <hr />
@@ -102,20 +99,13 @@
             <div itemscope itemtype="http://schema.org/Event">August 2014 &ndash; March 2015</div>
           </div>
           <div class="description">
-            <p>Responsible for developing and supporting Eyeball communications products including Eyeball Messenger SDK, SIP Server, and XMPP Server.</p>
-            <p>Stack: C++14, Boost, cpp-netlib, Ruby, Node.js</p>
-            <ul>
-              <li>Maintained 5 different C++ server products</li>
-              <ul>
-                <li>Protocols including SIP, STUN/TURN, and XMPP</li>
-              </ul>
-              <li>Extended and refactored systems to provide more</li>
-              <ul>
-                <li>Type safety, memory safety, and thread safety</li>
-              </ul>
-              <li>Worked extensively with GNU-oriented build systems</li>
-              <li>Introduced continuous integration testing and reviewing systems</li>
-            </ul>
+            <p>My primary focus was on a shared code base of modern C++14 which was used by five different servers, including XMPP and SIP. As my first task, I rewrote the build system for all five servers, using bash and GNU Make, to be more standard and idiomatic; we used Linux exclusively, including CentOS, Ubuntu, and Arch Linux.</p>
+
+            <p>To aid in the quality of the products, I was able to spend a great deal of time improving processes; I introduced continuous integration, unit testing, and all changes to the servers were reviewed by me. To improve type, memory, and thread safety, I reworked, rewrote, and abstracted many existing systems.</p>
+
+            <p>A challenging task was to reimplement our C++ authentication code as a generic RESTful authentication server, written in Node.js. This required reading and understanding the TURN RFC's requirements on authentication, implementing the server, and integrating it into all of the Eyeball products.</p>
+
+            <p>I also gave multiple technical talks, during lunches, covering topics such as debugging with GDB, smart source control with GIT, and practical uses of modern C++. As we were actively recruiting at the time, I had the opportunity to play a key role as the last stop for candidates interested in the server team; I grew comfortable with the process and testing a candidate's abilities in a cool, respectful fashion.</p>
           </div>
           </section>
           <hr />
@@ -127,12 +117,9 @@
             <div itemscope itemtype="http://schema.org/Event">June 2014 &ndash; August 2014</div>
           </div>
           <div class="description">
-            <p>Remote full-time C++ systems engineer focused on morphing a proven 2D game engine into a 3D-capable engine.</p>
-            <p>Stack: C++11, Boost, OpenGL ES 2.0, Ogre3D 1.9, Java (Android), ObjC (iOS), Cocos2dx</p>
-            <ul>
-              <li>Integrated new 3D rendering systems into an existing game engine</li>
-              <li>Profiled both rendering and model code to find bottlenecks and iron them out</li>
-            </ul>
+            <p>I built upon an existing, and well proven, cocos2d-x based game engine to integrate 3D rendering support using Ogre3D. The target platforms were Android NDK and iOS, using modern C++, which required some profiling of the rendering to achieve good performance.</p>
+
+            <p>I enjoyed working remotely, from Singapore, for the whole duration of the project; it was an exciting challenge to quickly learn how to manage remote work and improve communication with detailed write ups and daily checkins with the project lead.</p>
           </div>
           </section>
           <hr />
@@ -141,34 +128,16 @@
           <h3 class="position"><span class="title">Software Engineer SDE2</span> at <a href="http://tinyco.com/" target="_blank">TinyCo</a></h3>
           <div class="where-when">
             <div itemscope itemtype="http://schema.org/PostalAddress">San Francisco, CA</div>
-            <div itemscope itemtype="http://schema.org/Event">May 2013 &ndash; June 2014</div>
+            <div itemscope itemtype="http://schema.org/Event">Aug 2012 &ndash; June 2014</div>
           </div>
           <div class="description">
-            <p>Half of a centralized two-man team focusing on the longevity and architectural integrity of a cross-platform C++ game engine.</p>
-            <p>Stack: C++11, Boost, OpenGL ES 2.0, Java (Android), ObjC (iOS), Cocos2dx</p>
-            <ul>
-              <li>Code-reviewed (and controlled) changes to the engine on a daily basis</li>
-              <li>Catalyzed the induction of C++11 into the code base; gave engineering talks on C++ subjects</li>
-              <li>Drastically improved the C++ (specifically Android) build system for a 70% drop in build times</li>
-              <li>Introduced C++11 multi-threading for tasks such as asynchronous asset loading</li>
-            </ul>
-          </div>
-          </section>
-          <hr />
+            <p>I was a founding member of the core game engine team at TinyCo. We had the opportunity to not only instill better practices, such as continuous integration and daily code reviewing, but also do a great deal of systems-level API work in modern C++. I developed and integrated a replacement notification system using template meta-programming, which was much more thread-safe and type-safe. During my time at TinyCo, I also reimplemented the texture loading, on Android and iOS, to work asynchronously, using modern C++ synchronization.</p>
 
-          <section itemscope itemtype="http://schema.org/Organization">
-          <h3 class="position"><span class="title">Software Engineer SDE1</span> at <a href="http://tinyco.com/" target="_blank">TinyCo</a></h3>
-          <div class="where-when">
-            <div itemscope itemtype="http://schema.org/PostalAddress">San Francisco, CA</div>
-            <div itemscope itemtype="http://schema.org/Event">Aug. 2012 &ndash; May 2013</div>
-          </div>
-          <div class="description">
-            <p>Client-side gameplay engineer on a 6 person team.</p>
-            <ul>
-              <li>Completed gameplay features per-spec, contributing to the spec along the way</li>
-              <li>Refactored existing code to decrease coupling, increase encapsulation, and ensure stability</li>
-              <li>Spear-headed the creation of a <b>core Infrastructure Team</b> to oversee and influence architectural evolution</li>
-            </ul>
+            <p>The systems I implemented and the APIs I maintained were the core of hit games including Family Guy: The Quest for Stuff, Tiny Monsters, and more; these games manage ~100 million installs across Android and iOS.</p>
+
+            <p>I gave multiple talks to the engineering department, covering modern C++ techniques and features, using modern C++ synchronization for threading, and using template meta-programming for type-rich interfaces.</p>
+
+            <p>The culture at TinyCo was competitive, yet collaborative; we had many discussions and debates about C++ best practices and architecture design either during review or lunch time talks. At the end of the day, the code was cleaner and better maintained because of our passion.</p>
           </div>
           </section>
           <hr />
