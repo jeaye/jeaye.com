@@ -3,16 +3,21 @@ layout: index
 title: Jeaye | About
 ---
 
-<article>
-  {% for post in site.categories.jobs %}
+<hr class="blue hidden-print" />
+<article id="timeline" class="col-md-8">
+  {% for job in site.categories.jobs %}
     <section>
-      <div class="post_date">
-        {{ post.date | date: "%B %d, %Y" }}
-      </div>
-      <h3>
-        <a href="{{ post.url }}">{{ post.title }}</a>
+      <h3 class="position">
+        <span class="title">{{ job.title }}</span> at {{ job.company }}
       </h3>
-      {{ post.excerpt }}
+      <div class="where-when">
+        <div itemscope itemtype="http://schema.org/Event">
+          {{ job.start }} &ndash; {{ job.end }}
+        </div>
+      </div>
+      <div class="description">
+        {{ job.content }}
+      </div>
     </section>
   {% endfor %}
 </article>
