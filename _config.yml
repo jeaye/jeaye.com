@@ -20,4 +20,4 @@ resource_url: "http://jeaye.com"
 
 markdown: redcarpet
 highlighter: pygments
-exclude: [.bundle vendor]
+exclude: [.bundle, vendor]
