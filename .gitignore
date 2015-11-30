@@ -1,7 +1,17 @@
- # Scary files
+# Scary files
 .htaccess
 php.ini
 cgi-bin
 
 # Local working files (GIMP projects, etc)
 local/
+_site/
+.sass-cache/
+
+# Bundler
+/.bundle
+/vendor
+Gemfile.lock
+
+# Etc
+/run
