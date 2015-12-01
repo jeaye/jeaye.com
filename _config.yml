@@ -2,6 +2,7 @@ permalink: pretty
 url: "http://jeaye.com"
 
 # TODO: Remove dependency on blog css
+# TODO: Add as blog submodule
 
 markdown: redcarpet
 highlighter: pygments
