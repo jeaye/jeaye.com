@@ -1,5 +1,6 @@
 permalink: pretty
 url: "http://jeaye.com"
+blog_url: "http://blog.jeaye.com"
 
 # TODO: Remove dependency on blog css
 # TODO: Add as blog submodule
