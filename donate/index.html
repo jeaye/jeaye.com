@@ -21,9 +21,9 @@ bitcoin: 1HaMvpDjy7QJBDkcZALJr3s26FxLpv5WtJ
     <hr class="visible-xs visible-sm" />
     <h2 class="text-center">I use donations for</h2>
     <ul>
-      <li>New hardware and upgrades</li>
-      <li>Software licenses (Unity, UE4)</li>
-      <li>Technical books</li>
+      {% for use in site.data.donate.uses %}
+        <li>{{ use }}</li>
+      {% endfor %}
     </ul>
     <h2 class="text-center">Book wishlist</h2>
     <ul>
