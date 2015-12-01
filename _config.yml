@@ -16,7 +16,10 @@ defaults:
 
 permalink: pretty
 url: "http://jeaye.com"
+# TODO: Remove remaining instances
 resource_url: "http://jeaye.com"
+
+# TODO: Meta keywords in header
 
 markdown: redcarpet
 highlighter: pygments

@@ -3,10 +3,10 @@ layout: index
 title: Jeaye | About
 ---
 
-<hr class="blue hidden-print" />
-<article id="timeline" class="col-md-8">
-  {% for job in site.categories.jobs %}
-    <section>
+<div class="row">
+  <article id="timeline" class="col-md-8">
+    {% for job in site.categories.jobs %}
+    <section itemscope itemtype="http://schema.org/Organization">
       <h3 class="position">
         <span class="title">{{ job.title }}</span> at {{ job.company }}
       </h3>
@@ -19,5 +19,6 @@ title: Jeaye | About
         {{ job.content }}
       </div>
     </section>
-  {% endfor %}
-</article>
+    {% endfor %}
+  </article>
+</div>
