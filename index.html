@@ -9,8 +9,10 @@ title: Jeaye | About
     <section itemscope itemtype="http://schema.org/Organization">
       <h3 class="position">
         <span class="title">{{ job.title }}</span>
-        at
-        <a href="{{ job.company-url }}">{{ job.company }}</a>
+        {% if job.company %}
+          at
+          <a href="{{ job.company-url }}">{{ job.company }}</a>
+        {% endif %}
       </h3>
       <div class="where-when">
         <div itemscope itemtype="http://schema.org/Event">
