@@ -19,19 +19,17 @@ bitcoin: 1HaMvpDjy7QJBDkcZALJr3s26FxLpv5WtJ
 
   <aside id="summary" class="col-md-4 clearfix">
     <hr class="visible-xs visible-sm" />
-    <h2 class="text-center">I use donations for:</h2>
+    <h2 class="text-center">I use donations for</h2>
     <ul>
       <li>New hardware and upgrades</li>
       <li>Software licenses (Unity, UE4)</li>
       <li>Technical books</li>
     </ul>
-    <h2 class="text-center">Book wishlist:</h2>
+    <h2 class="text-center">Book wishlist</h2>
     <ul>
-      <li><a href="http://www.joyofclojure.com/">The Joy of Clojure</a></li>
-      <li><a href="http://www.cs.princeton.edu/~appel/modern/">Modern Compiler Implementation in ML</a></li>
-      <li><a href="http://www.pearsonhighered.com/educator/product/Compilers-Principles-Techniques-and-Tools/9780321486813.page">Compilers: Principles, Techniques, and Tools</a></li>
-      <li><a href="https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming">TAOCP (I - V)</a></li>
-      <li><a href="https://mitpress.mit.edu/books/structure-and-interpretation-computer-programs">SICP</a></li>
+      {% for book in site.data.donate.books %}
+        <li><a href="{{ book.url }}">{{ book.title }}</a></li>
+      {% endfor %}
     </ul>
   </aside>
 </div>
