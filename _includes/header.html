@@ -47,12 +47,36 @@
       </a>
 
       <ol id="toc">
-        <li><a href="{{ site.url }}/recommendations"><span>Recommendations</span></a></li>
-        <li><a href="{{ site.url }}/donate"><span>Donate</span></a></li>
-        <li><a href="{{ site.url }}/resume.pdf" target="_blank"><span>Resume</span></a></li>
-        <li><a href="{{ site.url }}"><span>Blog</span></a></li>
-        <li><a href="https://github.com/jeaye"><span>Projects</span></a></li>
-        <li class="current"><a href="{{ site.url }}"><span>About</span></a></li>
+        <li class="{{ page.nav-recommendations-class }}">
+          <a href="{{ site.url }}/recommendations">
+            <span>Recommendations</span>
+          </a>
+        </li>
+        <li class="{{ page.nav-donate-class }}">
+          <a href="{{ site.url }}/donate">
+            <span>Donate</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ site.url }}/resume.pdf" target="_blank">
+            <span>Resume</span>
+          </a>
+        </li>
+        <li>
+          <a href="{{ site.url }}">
+            <span>Blog</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/jeaye">
+            <span>Projects</span>
+          </a>
+        </li>
+        <li class="{{ page.nav-about-class }}">
+          <a href="{{ site.url }}">
+            <span>About</span>
+          </a>
+        </li>
       </ol>
 
       <hr class="blue hidden-print" />
