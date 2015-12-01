@@ -26,4 +26,31 @@ title: Jeaye | About
     <hr />
     {% endfor %}
   </article>
+
+  <aside id="summary" class="col-md-4 clearfix">
+    <hr class="visible-xs visible-sm" />
+    <h2 class="text-center">I'm experienced with</h2>
+    <table id="skills" class="table">
+      {% for skill in site.data.skills %}
+      <tr>
+        <td class="skill-name">{{ skill.name }}</td>
+        <td class="skill-progress">
+          <div class="progress">
+            <div class="progress-bar"
+                 role="progressbar"
+                 aria-valuenow="{{ skill.amount }}"
+                 aria-valuemin="0"
+                 aria-valuemax="100"
+                 style="width:{{ skill.amount }}%">
+              <span class="sr-only">{{ skill.amount }}%</span>
+            </div>
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </table>
+    <p>Other stuff I use: <b>Lisp, Functional Programming, Ruby</b></p>
+    <p>Stuff I like: <b>Vim, Linux, Quake III, FOSS</b></p>
+    <p>Hobbies: <b>IRC, Linux administration, piano</b></p>
+  </aside>
 </div>
