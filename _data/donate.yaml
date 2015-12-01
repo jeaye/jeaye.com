@@ -1,0 +1,17 @@
+uses: [
+  "New hardware and upgrades",
+  "Software licenses (Unity, UE4)",
+  "Technical books",
+]
+
+books:
+  - title: The Joy of Clojure
+    url: http://www.joyofclojure.com/
+  - title: Modern Compiler Implementation in ML
+    url: http://www.cs.princeton.edu/~appel/modern/
+  - title: "Compilers: Principles, Techniques, and Tools"
+    url: http://www.pearsonhighered.com/educator/product/Compilers-Principles-Techniques-and-Tools/9780321486813.page
+  - title: TAOCP (I - V)
+    url: https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming
+  - title: SICP
+    url: https://mitpress.mit.edu/books/structure-and-interpretation-computer-programs
