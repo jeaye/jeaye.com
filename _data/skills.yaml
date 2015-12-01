@@ -1,12 +1,17 @@
-- name: C++
-  amount: 95
-- name: OpenGL
-  amount: 65
-- name: Clojure
-  amount: 65
-- name: C#
-  amount: 70
-- name: Android
-  amount: 65
-- name: Linux
-  amount: 85
+primary:
+  - name: C++
+    amount: 95
+  - name: OpenGL
+    amount: 65
+  - name: Clojure
+    amount: 65
+  - name: C#
+    amount: 70
+  - name: Android
+    amount: 65
+  - name: Linux
+    amount: 85
+
+use: [Lisp, Functional Programming, Ruby]
+like: [Vim, Linux, Quake III, FOSS]
+hobbies: [IRC, Linux administration, piano]
