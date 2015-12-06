@@ -11,6 +11,8 @@ books:
     url: http://www.cs.princeton.edu/~appel/modern/
   - title: "Compilers: Principles, Techniques, and Tools"
     url: http://www.pearsonhighered.com/educator/product/Compilers-Principles-Techniques-and-Tools/9780321486813.page
+  - title: "Operating Systems: Implementation and Design"
+    url: http://www.pearsonhighered.com/educator/academic/product/0,,0131429388,00%2ben-USS_01DBC.html
   - title: TAOCP (I - V)
     url: https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming
   - title: SICP
