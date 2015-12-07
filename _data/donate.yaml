@@ -2,6 +2,7 @@ uses: [
   "New hardware and upgrades",
   "Software licensing (Unity3D, UE4)",
   "Technical books",
+  "VPS hosting/domain registration",
 ]
 
 books:
