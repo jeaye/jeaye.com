@@ -1,10 +1,10 @@
 primary:
+  - name: Clojure
+    amount: 85
   - name: C++
     amount: 95
   - name: OpenGL
     amount: 65
-  - name: Clojure
-    amount: 85
   - name: C#
     amount: 70
   - name: Android
