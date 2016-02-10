@@ -4,5 +4,5 @@ blog_url: "http://blog.jeaye.com"
 
 # TODO: Remove dependency on blog css
 
-highlighter: rogue
+highlighter: rouge
 exclude: [.bundle, vendor]
