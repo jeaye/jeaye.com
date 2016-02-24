@@ -17,6 +17,10 @@
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/hint.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.url }}/css/recommendations.css" />
     <link rel="stylesheet" type="text/css" href="{{ site.blog_url }}/css/blog.css" />
+
+    {% if feed_meta %}
+      {% feed_meta %}
+    {% endif %}
   </head>
 
   <body itemscope itemtype="http://schema.org/Person">
