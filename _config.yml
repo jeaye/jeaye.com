@@ -1,7 +1,7 @@
 permalink: pretty
 home_url: "https://jeaye.com"
 blog_url: "https://blog.jeaye.com"
-has_feed: false
+url: home_url
 
 # TODO: Remove dependency on blog css
 
