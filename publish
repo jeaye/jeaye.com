@@ -9,6 +9,7 @@ trap cleanup EXIT
 tmp=$(mktemp -d)
 mv -v _site/* "$tmp"
 git checkout -B gh-pages
+git pull origin HEAD
 rm -rf ./*
 find . ! -regex '^\./vendor.*' \
        ! -regex '^\./run$' \
