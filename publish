@@ -14,7 +14,6 @@ rm -rf ./*
 find . ! -regex '^\./vendor.*' \
        ! -regex '^\./run$' \
        ! -regex '^\./publish$' \
-       ! -regex '^\./Gemfile.*' \
        ! -regex '^\./\..*' \
        -delete
 mv -v "$tmp"/* .
