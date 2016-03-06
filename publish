@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+cleanup()
+{
+  [ -z ${tmp+x} ] || rm -vrf "$tmp"
+}
+trap cleanup EXIT
+
+tmp=$(mktemp -d)
+mv -v _site/* "$tmp"
+git checkout -B gh-pages
+rm -rf ./*
+find . ! -regex '^\./vendor.*' \
+       ! -regex '^\./run$' \
+       ! -regex '^\./publish$' \
+       ! -regex '^\./Gemfile.*' \
+       -delete
+mv -v "$tmp"/* .
+git add .
+git reset HEAD -- vendor run publish Gemfile*
+git commit -am "Publish updates"
+git push origin gh-pages
+git checkout master
