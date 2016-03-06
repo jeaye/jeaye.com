@@ -10,9 +10,9 @@ tmp=$(mktemp -d)
 mv -v _site/* "$tmp"/
 cp -rv .git "$tmp"/
 pushd "$tmp"
+  rm -rfv ./vendor ./run ./publish ./Gemfile*
   git checkout -B gh-pages
   git add .
-  git reset HEAD -- vendor run publish Gemfile*
   git commit -am "Publish updates"
   git push -f origin HEAD
 popd
