@@ -11,8 +11,9 @@ mv -v _site/* "$tmp/"
 cp -rv .git "$tmp/"
 pushd "$tmp"
   git checkout -B gh-pages
+  git pull --commit origin HEAD
   git add .
   git reset HEAD -- vendor run publish Gemfile*
   git commit -am "Publish updates"
-  git push origin gh-pages
+  git push origin HEAD
 popd
