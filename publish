@@ -2,15 +2,18 @@
 
 cleanup()
 {
-  [ -z ${tmp+x} ] || rm -vrf "$tmp"
+  [ -z ${tmp+x} ] || rm -rf "$tmp"
 }
 trap cleanup EXIT
 
+export JEKYLL_ENV=production
+bundle exec jekyll build
+
 tmp=$(mktemp -d)
-mv -v _site/* "$tmp"/
-cp -rv .git "$tmp"/
+cp _site/* "$tmp"/
+cp -r .git "$tmp"/
 pushd "$tmp"
-  rm -rfv ./vendor ./run ./publish ./Gemfile*
+  rm -rf ./vendor ./run ./publish ./Gemfile*
   git checkout -B gh-pages
   git add .
   git commit -am "Publish updates"
