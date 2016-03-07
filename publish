@@ -13,7 +13,6 @@ tmp=$(mktemp -d)
 cp _site/* "$tmp"/
 cp -r .git "$tmp"/
 pushd "$tmp"
-  rm -rf ./vendor ./run ./publish ./Gemfile*
   git checkout -B gh-pages
   git add .
   git commit -am "Publish updates"

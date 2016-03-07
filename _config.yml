@@ -10,4 +10,4 @@ license_url: "https://github.com/jeaye/jeaye.com/blob/gh-pages/LICENSE"
 # TODO: Remove dependency on blog css
 
 highlighter: rouge
-exclude: [.bundle, vendor]
+exclude: [.bundle, vendor, Gemfile, Gemfile.lock, run, publish]
