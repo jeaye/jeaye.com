@@ -6,6 +6,7 @@ license_url: "https://github.com/jeaye/jeaye.com/blob/gh-pages/LICENSE"
 
 sass:
   sass_dir: css
+  style: compressed
 
 # TODO: Remove dependency on blog css
 
