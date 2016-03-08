@@ -10,7 +10,7 @@ export JEKYLL_ENV=production
 bundle exec jekyll build
 
 tmp=$(mktemp -d)
-cp _site/* "$tmp"/
+cp -r _site/* "$tmp"/
 cp -r .git "$tmp"/
 pushd "$tmp"
   git checkout -B gh-pages
