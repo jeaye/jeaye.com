@@ -6,6 +6,8 @@ cleanup()
 }
 trap cleanup EXIT
 
+./generate-sprite-sheet
+
 export JEKYLL_ENV=production
 bundle exec jekyll build
 

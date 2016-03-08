@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+# TODO: install sprity-cli when needed
+
+node ./node_modules/sprity-cli/index.js create ./img img-partial/*.png -s sprite-sheet.css
+mv ./img/sprite-sheet.css ./css-partial/sprite-sheet.css

@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+./generate-sprite-sheet
 bundle exec jekyll serve

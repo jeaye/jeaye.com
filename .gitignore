@@ -13,3 +13,9 @@ _site/
 /.bundle
 /vendor
 Gemfile.lock
+
+# NPM
+node_modules
+
+# Generated files
+sprite-sheet.css
