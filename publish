@@ -11,7 +11,7 @@ bundle exec jekyll build
 
 for img in _site/img/*.png;
 do
-  optipng "$img"
+  optipng -q "$img"
 done
 
 tmp=$(mktemp -d)
