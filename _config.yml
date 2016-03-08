@@ -1,6 +1,3 @@
-gems:
-  - jekyll-assets
-
 permalink: pretty
 home_url: "https://jeaye.com"
 blog_url: "https://blog.jeaye.com"
