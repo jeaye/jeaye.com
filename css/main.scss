@@ -3278,7 +3278,6 @@ input[type="button"].btn-block {
   text-decoration: none;
   background-color: transparent;
   background-image: none;
-  filter: progid: DXImageTransform.Microsoft.gradient(enabled=false);
   cursor: not-allowed
 }
 
@@ -6064,7 +6063,6 @@ body.modal-open,
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5) 0, rgba(0, 0, 0, 0.0001) 100%);
   background-repeat: repeat-x;
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1)
 }
 
 .carousel-control.right {
@@ -6075,7 +6073,6 @@ body.modal-open,
   background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, rgba(0, 0, 0, 0.5) 100%);
   background-repeat: repeat-x;
-  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1)
 }
 
 .carousel-control:hover,
@@ -7163,7 +7160,6 @@ a .icon-spin {
   -ms-transform: rotate(90deg);
   -o-transform: rotate(90deg);
   transform: rotate(90deg);
-  filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=1)
 }
 
 .icon-rotate-180:before {
@@ -7172,7 +7168,6 @@ a .icon-spin {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
-  filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=2)
 }
 
 .icon-rotate-270:before {
@@ -7181,7 +7176,6 @@ a .icon-spin {
   -ms-transform: rotate(270deg);
   -o-transform: rotate(270deg);
   transform: rotate(270deg);
-  filter: progid: DXImageTransform.Microsoft.BasicImage(rotation=3)
 }
 
 .icon-flip-horizontal:before {

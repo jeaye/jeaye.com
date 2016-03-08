@@ -4,6 +4,9 @@ blog_url: "https://blog.jeaye.com"
 url: "https://jeaye.com"
 license_url: "https://github.com/jeaye/jeaye.com/blob/gh-pages/LICENSE"
 
+sass:
+  sass_dir: css
+
 # TODO: Remove dependency on blog css
 
 highlighter: rouge
