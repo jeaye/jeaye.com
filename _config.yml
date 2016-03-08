@@ -5,10 +5,10 @@ url: "https://jeaye.com"
 license_url: "https://github.com/jeaye/jeaye.com/blob/gh-pages/LICENSE"
 
 sass:
-  sass_dir: css
+  sass_dir: css-partial
   style: compressed
 
 # TODO: Remove dependency on blog css
 
 highlighter: rouge
-exclude: [.bundle, vendor, Gemfile, Gemfile.lock, run, publish]
+exclude: [.bundle, vendor, Gemfile, Gemfile.lock, css-partial, run, publish]
