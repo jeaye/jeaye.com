@@ -9,6 +9,11 @@ trap cleanup EXIT
 export JEKYLL_ENV=production
 bundle exec jekyll build
 
+for img in _site/img/*.png;
+do
+  optipng "$img"
+done
+
 tmp=$(mktemp -d)
 cp -r _site/* "$tmp"/
 cp -r .git "$tmp"/
