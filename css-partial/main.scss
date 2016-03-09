@@ -137,7 +137,6 @@ html {
 body {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
-  line-height: 1.428571429;
   color: #333;
   background-color: #fff;
 }
@@ -198,12 +197,10 @@ h2,
 h3 {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  line-height: 1.1;
 }
 
 h1 small {
   font-weight: normal;
-  line-height: 1;
   color: #999;
 }
 
@@ -361,7 +358,6 @@ table {
 
 .table tbody>tr>td {
   padding: 8px;
-  line-height: 1.428571429;
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
@@ -383,18 +379,12 @@ table {
   margin-bottom: 30px;
   font-size: 21px;
   font-weight: 200;
-  line-height: 2.1428571435;
   color: inherit;
   background-color: #eee;
 }
 
 .jumbotron h1 {
-  line-height: 1;
   color: inherit;
-}
-
-.jumbotron p {
-  line-height: 1.4;
 }
 
 .container .jumbotron {
@@ -499,10 +489,6 @@ table {
 
 .pull-right {
   float: right;
-}
-
-body {
-  -webkit-backface-visibility: hidden;
 }
 
 .animated {
