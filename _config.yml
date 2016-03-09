@@ -7,7 +7,9 @@ blog_url: "https://blog.jeaye.com"
 url: "https://jeaye.com"
 license_url: "https://github.com/jeaye/jeaye.com/blob/gh-pages/LICENSE"
 
-# TODO: Remove font in main.css
+# TODO: Remove tab images?
+# TODO: Setup a nice font
+# TODO: Tweak social image sizes and positions
 sass:
   sass_dir: css-partial
   style: compressed
