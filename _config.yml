@@ -12,7 +12,5 @@ sass:
   sass_dir: css-partial
   style: compressed
 
-# TODO: Remove dependency on blog css
-
 highlighter: rouge
 exclude: [.bundle, vendor, Gemfile, Gemfile.lock, node_modules, img-partial, css-partial, generate-sprite-sheet, run, publish]
