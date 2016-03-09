@@ -7,6 +7,7 @@ blog_url: "https://blog.jeaye.com"
 url: "https://jeaye.com"
 license_url: "https://github.com/jeaye/jeaye.com/blob/gh-pages/LICENSE"
 
+# TODO: Remove font in main.css
 sass:
   sass_dir: css-partial
   style: compressed
@@ -14,4 +15,4 @@ sass:
 # TODO: Remove dependency on blog css
 
 highlighter: rouge
-exclude: [.bundle, vendor, Gemfile, Gemfile.lock, css-partial, run, publish]
+exclude: [.bundle, vendor, Gemfile, Gemfile.lock, node_modules, img-partial, css-partial, generate-sprite-sheet, run, publish]
