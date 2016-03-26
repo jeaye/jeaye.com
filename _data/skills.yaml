@@ -10,7 +10,7 @@ primary:
   - name: Android
     amount: 65
   - name: Linux
-    amount: 85
+    amount: 95
 
 use: [Lisp, Functional Programming, Ruby]
 like: [Vim, Linux, Quake III, FOSS]
