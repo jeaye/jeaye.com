@@ -1,6 +1,11 @@
 #!/usr/bin/env bash
 
-# TODO: install sprity-cli when needed
+set -eu
+
+if [ ! -d ./node_modules/sprity-cli ];
+then
+  npm install sprity-cli
+fi
 
 node ./node_modules/sprity-cli/index.js \
     create ./img img-partial/*.png \
