@@ -1,5 +1,6 @@
 gems:
   - octopress-minify-html
+  - jekyll-seo-tag
 
 permalink: pretty
 home_url: "https://jeaye.com"
