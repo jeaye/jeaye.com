@@ -21,6 +21,7 @@ cp -r _site/* "$tmp"/
 cp -r .git "$tmp"/
 pushd "$tmp"
   git checkout -B gh-pages
+  git ls-files | xargs git rm -f
   git add .
   git commit -am "Publish updates"
   git push -f origin HEAD
