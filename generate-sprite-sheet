@@ -2,10 +2,8 @@
 
 set -eu
 
-if [ ! -d ./node_modules/sprity-cli ];
-then
-  npm install sprity-cli
-fi
+[ ! -d ./node_modules/sprity-cli ] && npm install sprity-cli
+[ ! -d ./node_modules/sprity-lwip ] && npm install sprity-lwip
 
 node ./node_modules/sprity-cli/index.js \
     create ./img img-partial/*.png \
