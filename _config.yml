@@ -13,5 +13,9 @@ sass:
   sass_dir: css-partial
   style: compressed
 
-highlighter: rouge
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
 exclude: [.bundle, vendor, Gemfile, Gemfile.lock, node_modules, img-partial, css-partial, generate-sprite-sheet, run, publish, blog]
