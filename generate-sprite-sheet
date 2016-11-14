@@ -2,8 +2,7 @@
 
 set -eu
 
-[ ! -d ./node_modules/sprity-cli ] && npm install sprity-cli
-[ ! -d ./node_modules/sprity-lwip ] && npm install https://github.com/chadwatson/sprity-lwip.git
+[ ! -d ./node_modules ] && npm install
 
 node ./node_modules/sprity-cli/index.js \
     create ./img img-partial/*.png \
