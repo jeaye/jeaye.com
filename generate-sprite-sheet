@@ -9,5 +9,5 @@ node ./node_modules/sprity-cli/index.js \
     -s sprite-sheet.css \
     -c /img \
     -n sprite-sheet
-mv -f ./img/sprite-sheet.png ./img/sprite-sheet.png
+#mv -f ./img/sprite-sheet.png ./img/sprite-sheet.png
 mv -f ./img/sprite-sheet.css ./css-partial/sprite-sheet.scss
