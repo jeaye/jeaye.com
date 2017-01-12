@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -eu
+
 cleanup()
 {
   [ -z ${tmp+x} ] || rm -rf "$tmp"
@@ -13,6 +15,7 @@ rm -rf ./_site
 export JEKYLL_ENV=production
 bundle exec jekyll build
 
+# TODO: Check for optipng and fail if not present
 for img in _site/img/*.png;
 do
   optipng -q "$img"
