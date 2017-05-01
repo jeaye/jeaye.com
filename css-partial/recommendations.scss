@@ -1,4 +1,6 @@
-.classy .icon .icon-open-quote {
+.classy {
+  .icon;
+  .icon-open-quote;
   display: inline-block;
   width: 80%;
   padding: 8px;
@@ -9,7 +11,9 @@
   text-indent: 23px;
 }
 
-.classy span .icon .icon-close-quote {
+.classy span {
+  .icon;
+  .icon-close-quote;
   display: block;
   background-repeat: no-repeat;
   background-position: bottom right;
