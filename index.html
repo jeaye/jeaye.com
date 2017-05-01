@@ -30,7 +30,7 @@ nav-about-class: current
 
   <aside id="summary" class="col-md-4 clearfix">
     <hr class="visible-xs visible-sm" />
-    <h2 class="text-center weight-500">I'm experienced with</h2>
+    <h3 class="text-center">I'm experienced with</h3>
     <table id="skills" class="table">
       {% for skill in site.data.skills.primary %}
       <tr>
@@ -50,8 +50,8 @@ nav-about-class: current
       </tr>
       {% endfor %}
     </table>
-    <p>Other stuff I use: <b>{{ site.data.skills.use  | join: ', ' }}</b></p>
-    <p>Stuff I like: <b>{{ site.data.skills.like  | join: ', ' }}</b></p>
-    <p>Hobbies: <b>{{ site.data.skills.hobbies  | join: ', ' }}</b></p>
+    <p><b>Other stuff I use</b>: {{ site.data.skills.use  | join: ', ' }}</p>
+    <p><b>Stuff I like</b>: {{ site.data.skills.like  | join: ', ' }}</p>
+    <p><b>Hobbies</b>: {{ site.data.skills.hobbies  | join: ', ' }}</p>
   </aside>
 </div>
