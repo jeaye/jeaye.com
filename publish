@@ -13,7 +13,7 @@ rm -rf ./_site
 ./generate-sprite-sheet
 
 export JEKYLL_ENV=production
-bundle exec jekyll build
+bundle-2.3 exec jekyll build
 
 # TODO: Check for optipng and fail if not present
 for img in _site/img/*.png;
