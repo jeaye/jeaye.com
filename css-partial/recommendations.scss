@@ -1,6 +1,5 @@
 .classy {
-  .icon;
-  .icon-open-quote;
+  .icon .icon-open-quote;
   display: inline-block;
   width: 80%;
   padding: 8px;
@@ -12,8 +11,7 @@
 }
 
 .classy span {
-  .icon;
-  .icon-close-quote;
+  .icon .icon-close-quote;
   display: block;
   background-repeat: no-repeat;
   background-position: bottom right;
