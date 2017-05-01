@@ -1,18 +1,16 @@
-.classy {
+.classy .icon .icon-open-quote {
   display: inline-block;
   width: 80%;
   padding: 8px;
   margin-left: 5px;
   margin-right: 5px;
-  background-image: url(../img/open_quote.png);
   background-position: top left;
   background-repeat: no-repeat;
   text-indent: 23px;
 }
 
-.classy span {
+.classy span .icon .icon-close-quote {
   display: block;
-  background-image: url(../img/close_quote.png);
   background-repeat: no-repeat;
   background-position: bottom right;
 }
