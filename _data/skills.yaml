@@ -5,13 +5,11 @@ primary:
     amount: 95
   - name: OpenGL
     amount: 65
-  - name: C#
-    amount: 70
-  - name: Android
-    amount: 65
-  - name: Linux
+  - name: GNU/Linux
     amount: 95
+  - name: Mentoring
+    amount: 90
 
-use: [Lisp, Functional Programming, Ruby]
-like: [Vim, Linux, Quake III, FOSS]
+use: [Rust, Functional Programming, Type Systems]
+like: [Vim, Linux, FOSS]
 hobbies: [Reverse Engineering, IRC, Linux Administration, Piano]
