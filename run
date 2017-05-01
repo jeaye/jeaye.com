@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 ./generate-sprite-sheet
-bundle exec jekyll serve "$@"
+bundle-2.3 exec jekyll serve "$@"
