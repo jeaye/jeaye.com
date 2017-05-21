@@ -7,6 +7,7 @@ home_url: "https://jeaye.com"
 blog_url: "https://blog.jeaye.com"
 url: "https://jeaye.com"
 license_url: "https://github.com/jeaye/jeaye.com/blob/gh-pages/LICENSE"
+tagline: "I'm a systems-level functional programmer with a passion for safety and security."
 
 # TODO: Setup a nice font
 sass:

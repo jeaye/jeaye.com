@@ -10,6 +10,6 @@ primary:
   - name: Mentoring
     amount: 90
 
-use: [Rust, Functional Programming, Radare2]
-like: [Vim, Type Systems, FOSS]
+use: [Radare2, Rust]
+like: [FOSS, Type Systems, Vim]
 hobbies: [Reverse Engineering, IRC, Linux Administration, Piano]
