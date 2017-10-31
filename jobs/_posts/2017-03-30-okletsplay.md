@@ -6,7 +6,7 @@ start: April 2017
 end: Present
 ---
 
-I lead the development of a patented eSports wagering platform for mobile, console, and web.
+I lead the development of a patented e-sports wagering platform for mobile, console, and web.
 
 Back-end: Clojure + Heroku
 Front-end: ClojureScript + ReactNative
