@@ -10,7 +10,8 @@ trap cleanup EXIT
 
 rm -rf ./_site
 
-./generate-sprite-sheet
+# TODO: https://github.com/Ensighten/grunt-spritesmith
+#./generate-sprite-sheet
 
 export JEKYLL_ENV=production
 bundle-2.3 exec jekyll build
