@@ -6,76 +6,53 @@
 
     <meta name="author" content="jeaye" />
     <meta name="keywords" content="jeaye,jesse,wilkerson,c++,modern,software,functional,clojure,programming,{{ page.tags  | join: ', ' }}" />
-    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.tagline }}">
 
     <link rel="stylesheet" type="text/css" href="{{ site.home_url }}/css/all.css" />
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-nn4HPE8lTHyVtfCBi5yW9d20FjT8BJwUXyWZT9InLYax14RDjBj46LmSztkmNP9w" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
 
     <link type="application/atom+xml" rel="alternate" href="{{ site.blog_url }}/feed.xml" title="" />
 
     {% seo %}
   </head>
 
-  <body itemscope itemtype="http://schema.org/Person">
-    <div class="container">
-      <div id="header" class="row hidden-print">
-        <header id="me" class="jumbotron col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 fadeInDown animated">
-          <a href="{{ site.home_url }}">
-            <div style="margin-top:30px;" class="pull-right icon icon-j"></div>
-          </a>
+  <body>
+    <div class="pure-g">
+      <div class="header pure-u-1">
+        <div class="pure-g">
+          <div class="header-inner pure-u-1 pure-u-md-3-4">
+            <div class="header-item pure-u-1 pure-u-md-1-2">
+              <h1 class="brand-title">My name is <span class="header-name">Jeaye</span></h1>
+              <h2 class="brand-tagline">I'm a systems-level functional programmer with a passion for safety and security.</h2>
+            </div>
+            <div class="header-item pure-u-1-4">
+              <div class="icon icon-j"></div>
+            </div>
+          </div>
+        </div>
 
-          <h1>
-            <small>My name is </small>
-            <strong>Jeaye</strong><small>.</small>
-          </h1>
-          <p style="max-width:66%">
-          {{ site.tagline }}
-          </p>
-        </header>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="pure-button" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="pure-button" href="#">Github</a>
+            </li>
+            <li class="nav-item">
+              <a class="pure-button" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="pure-button" href="#">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="pure-button" href="#">Resume</a>
+            </li>
+          </ul>
+        </nav>
+
       </div>
 
-      <a href="mailto:contact@jeaye.com"
-        target="_blank"
-        title="contact@jeaye.com"
-        class="social icon icon-mail">
-      </a>
-      <a href="https://www.linkedin.com/in/jeaye"
-        target="_blank"
-        title="https://www.linkedin.com/in/jeaye"
-        class="social icon icon-in">
-      </a>
-      <a href="https://github.com/jeaye"
-        target="_blank"
-        title="https://github.com/jeaye"
-        class="social icon icon-github">
-      </a>
-      <a href="https://blog.jeaye.com/feed.xml"
-        target="_blank"
-        title="https://blog.jeaye.com/feed.xml"
-        class="social icon icon-feed">
-      </a>
-
-      <ol id="toc">
-        <li>
-          <a href="{{ site.home_url }}/resume.pdf" target="_blank">
-            <span>Resume</span>
-          </a>
-        </li>
-        <li class="{{ site.nav-blog-class }}">
-          <a href="{{ site.blog_url }}">
-            <span>Blog</span>
-          </a>
-        </li>
-        <li>
-          <a href="https://github.com/jeaye">
-            <span>Projects</span>
-          </a>
-        </li>
-        <li class="{{ page.nav-about-class }}">
-          <a href="{{ site.home_url }}">
-            <span>About</span>
-          </a>
-        </li>
-      </ol>
-
-      <hr class="blue hidden-print" />
+      <div class="content pure-u-1 pure-u-md-3-4">
