@@ -79,6 +79,17 @@ a:focus {
   text-decoration: none;
 }
 
+code:not([id='typeans']) {
+  color: #268bd2;
+  background-color: #eee8d5;
+  padding-left: 5px;
+  padding-right: 5px;
+  border: 1px solid;
+  border-color: lightgrey;
+  border-radius: 5px;
+  white-space: nowrap;
+}
+
 .content-subhead {
   text-transform: uppercase;
   color: #aaa;
