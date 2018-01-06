@@ -13,19 +13,6 @@ a:focus {
   text-decoration: underline;
 }
 
-h3 {
-  font-weight: 100;
-}
-
-.pure-img-responsive {
-  max-width: 100%;
-  height: auto;
-}
-
-#layout {
-  padding: 0;
-}
-
 .header {
   margin: 0;
   padding-bottom: 2em;
@@ -145,9 +132,10 @@ h3 {
   background: #999;
   font-size: 80%;
 }
-.post-category-privacy {
+.post-category-review {
   background: #5aba59;
 }
+.post-category-privacy,
 .post-category-security {
   background: #4d85d1;
 }
@@ -156,6 +144,30 @@ h3 {
 }
 .post-category-tutorial {
   background: #df2d4f;
+}
+
+.post h1,h2,h3 {
+  color: #222;
+}
+
+.related-list {
+  list-style-type: none;
+}
+.related-list li {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+.related-list li:last-child {
+  border: none;
+}
+.related-post-title {
+  font-size: 1em;
+  color: #222;
+  margin-bottom: 0.2em;
+}
+.related-post-title a {
+  color: #222;
+  text-decoration-color: #222;
 }
 
 .footer {
