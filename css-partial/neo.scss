@@ -170,6 +170,27 @@ a:focus {
   text-decoration-color: #222;
 }
 
+figure {
+  text-align: center;
+  margin: 0 auto;
+}
+
+figure img {
+  width: 66%;
+  border: 1px solid #323232;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 3px 3px 5px rgba(50, 50, 50, .5);
+}
+
+figcaption {
+  padding: 1em 1em 2em 1em;
+  word-wrap: normal;
+  text-align: center;
+  display: inline-block !important;
+  width: 66%;
+}
+
 .footer {
   text-align: center;
   padding: 1em 0;
