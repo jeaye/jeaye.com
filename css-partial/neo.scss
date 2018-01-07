@@ -122,7 +122,6 @@ a:focus {
   color: #444;
   float: right;
 }
-
 .post-category {
   margin: 0 0.1em;
   padding: 0.3em 1em;
@@ -143,7 +142,6 @@ a:focus {
 .post-category-tutorial {
   background: #df2d4f;
 }
-
 .post h1,h2,h3 {
   color: #222;
 }
@@ -189,15 +187,30 @@ figcaption {
   width: 66%;
 }
 
-.footer {
-  text-align: center;
-  padding: 1em 0;
+/* TODO: Probably remove these. */
+#skills td {
+  border-top: 0;
 }
-.footer a {
-  color: #ccc;
-  font-size: 80%;
+
+#skills .skill-name {
+  text-align: right;
 }
-.footer .pure-menu a:hover,
-.footer .pure-menu a:focus {
-  background: none;
+
+#skills .skill-progress {
+  width: 100%;
+}
+
+#skills .skill-progress .progress {
+  margin-bottom: 0;
+}
+
+.sr-only {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	border: 0;
 }
