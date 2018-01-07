@@ -96,6 +96,21 @@ a:focus {
   margin-right: auto;
 }
 
+.job-title {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 0.2em;
+}
+.job-at {
+  color: #999;
+  font-size: 80%;
+  font-weight: 500;
+}
+.job-company {
+  color: rgb(61, 146, 201);
+  font-size: 90%;
+}
+
 .post {
   padding-bottom: 2em;
 }

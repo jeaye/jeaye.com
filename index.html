@@ -9,11 +9,13 @@ nav-about-class: current
     <section class="post">
       <header class="post-header">
         <div class="post-date">{{ job.start }} &ndash; {{ job.end }}</div>
-        <h2 class="post-title">
-          {{ job.title }}
+        <h2 class="job-title">
+          <span>{{ job.title }}</span>
           {% if job.company %}
-            at
-            <a href="{{ job.company-url }}">{{ job.company }}</a>
+            <span class="job-at">at</span>
+            <a href="{{ job.company-url }}">
+              <span class="job-company">{{ job.company }}</span>
+            </a>
           {% endif %}
         </h2>
       </header>
