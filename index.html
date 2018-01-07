@@ -4,7 +4,29 @@ title: Jeaye | About
 nav-about-class: current
 ---
 
-<div class="row">
+<div class="posts">
+  {% for job in site.categories.jobs %}
+    <section class="post">
+      <header class="post-header">
+        <div class="post-date">{{ job.start }} &ndash; {{ job.end }}</div>
+        <h2 class="post-title">
+          {{ job.title }}
+          {% if job.company %}
+            at
+            <a href="{{ job.company-url }}">{{ job.company }}</a>
+          {% endif %}
+        </h2>
+      </header>
+
+      <div class="post-description">
+        <p>
+          {{ job.content }}
+        </p>
+      </div>
+    </section>
+  {% endfor %}
+
+  <!--
   <article id="timeline" class="col-md-8">
     {% for job in site.categories.jobs %}
     <section itemscope itemtype="http://schema.org/Organization">
@@ -26,10 +48,10 @@ nav-about-class: current
     </section>
     <hr />
     {% endfor %}
+    -->
   </article>
 
   <aside id="summary" class="col-md-4 clearfix">
-    <hr class="visible-xs visible-sm" />
     <h3 class="text-center">I'm experienced with</h3>
     <table id="skills" class="table">
       {% for skill in site.data.skills.primary %}
