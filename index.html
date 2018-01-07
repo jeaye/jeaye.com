@@ -4,18 +4,19 @@ title: Jeaye | About
 nav-about-class: current
 ---
 
-<div class="posts">
-  {% for job in site.categories.jobs %}
+<div class="pure-g">
+  <div class="pure-u-1 pure-u-md-3-4 posts">
+    {% for job in site.categories.jobs %}
     <section class="post">
       <header class="post-header">
         <div class="post-date">{{ job.start }} &ndash; {{ job.end }}</div>
         <h2 class="job-title">
           <span>{{ job.title }}</span>
           {% if job.company %}
-            <span class="job-at">at</span>
-            <a href="{{ job.company-url }}">
-              <span class="job-company">{{ job.company }}</span>
-            </a>
+          <span class="job-at">at</span>
+          <a href="{{ job.company-url }}">
+            <span class="job-company">{{ job.company }}</span>
+          </a>
           {% endif %}
         </h2>
       </header>
@@ -26,56 +27,34 @@ nav-about-class: current
         </p>
       </div>
     </section>
-  {% endfor %}
-
-  <!--
-  <article id="timeline" class="col-md-8">
-    {% for job in site.categories.jobs %}
-    <section itemscope itemtype="http://schema.org/Organization">
-      <h3 class="position">
-        <span class="title">{{ job.title }}</span>
-        {% if job.company %}
-          at
-          <a href="{{ job.company-url }}">{{ job.company }}</a>
-        {% endif %}
-      </h3>
-      <div class="where-when">
-        <div itemscope itemtype="http://schema.org/Event">
-          {{ job.start }} &ndash; {{ job.end }}
-        </div>
-      </div>
-      <div class="description">
-        {{ job.content }}
-      </div>
-    </section>
-    <hr />
     {% endfor %}
-    -->
-  </article>
+  </div>
 
-  <aside id="summary" class="col-md-4 clearfix">
-    <h3 class="text-center">I'm experienced with</h3>
-    <table id="skills" class="table">
-      {% for skill in site.data.skills.primary %}
-      <tr>
-        <td class="skill-name">{{ skill.name }}</td>
-        <td class="skill-progress">
-          <div class="progress">
-            <div class="progress-bar"
-                 role="progressbar"
-                 aria-valuenow="{{ skill.amount }}"
-                 aria-valuemin="0"
-                 aria-valuemax="100"
-                 style="width:{{ skill.amount }}%">
-              <span class="sr-only">{{ skill.amount }}%</span>
+  <div class="pure-u-1 pure-u-md-1-4">
+    <div class="skills-container">
+      <h3 class="text-center">I'm experienced with</h3>
+      <table class="skills">
+        {% for skill in site.data.skills.primary %}
+        <tr>
+          <td class="skill-name">{{ skill.name }}</td>
+          <td class="skill-progress">
+            <div class="progress">
+              <div class="progress-bar"
+                role="progressbar"
+                aria-valuenow="{{ skill.amount }}"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="width:{{ skill.amount }}%">
+                <span class="progress-no-text">{{ skill.amount }}%</span>
+              </div>
             </div>
-          </div>
-        </td>
-      </tr>
-      {% endfor %}
-    </table>
-    <p><b>Other stuff I use</b>: {{ site.data.skills.use  | join: ', ' }}</p>
-    <p><b>Stuff I like</b>: {{ site.data.skills.like  | join: ', ' }}</p>
-    <p><b>Hobbies</b>: {{ site.data.skills.hobbies  | join: ', ' }}</p>
-  </aside>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+      <p><b>Other stuff I use</b>: {{ site.data.skills.use  | join: ', ' }}</p>
+      <p><b>Stuff I like</b>: {{ site.data.skills.like  | join: ', ' }}</p>
+      <p><b>Hobbies</b>: {{ site.data.skills.hobbies  | join: ', ' }}</p>
+    </div>
+  </div>
 </div>

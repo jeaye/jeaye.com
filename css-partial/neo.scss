@@ -203,23 +203,24 @@ figcaption {
 }
 
 /* TODO: Probably remove these. */
-#skills td {
-  border-top: 0;
+.skills-container {
+  padding-left: 2em;
 }
 
-#skills .skill-name {
+.skills tbody>tr>td {
+  padding: 8px;
+  vertical-align: top;
+}
+
+.skill-name {
   text-align: right;
 }
 
-#skills .skill-progress {
+.skill-progress {
   width: 100%;
 }
 
-#skills .skill-progress .progress {
-  margin-bottom: 0;
-}
-
-.sr-only {
+.progress-no-text {
 	position: absolute;
 	width: 1px;
 	height: 1px;
@@ -228,4 +229,21 @@ figcaption {
 	overflow: hidden;
 	clip: rect(0 0 0 0);
 	border: 0;
+}
+
+.progress {
+  overflow: hidden;
+  height: 1.5em;
+}
+
+.progress-bar {
+  float: left;
+  width: 0;
+  height: 100%;
+  font-size: 12px;
+  color: #fff;
+  text-align: center;
+  background-color: #428bca;
+  -webkit-transition: width .6s ease;
+  transition: width 0.6s ease;
 }
