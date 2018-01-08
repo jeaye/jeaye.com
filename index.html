@@ -35,30 +35,13 @@ nav-about-class: current
 </div>
 </div>
 <div class="toolbox-content pure-u-1-4">
-  <div class="skills-container">
-    <h1 class="content-subhead">Toolbox</h1>
-    <ul class="skills-list">
-      {% for skill in site.data.skills.primary %}
-      <li>
-        <span class="skill-name">{{ skill.name }}: </span>
-        {{ skill.value | join: ', ' }}
-      </li>
-      {% endfor %}
-    </ul>
-
-    <h4 class="skill-group">Other stuff I use</h4>
-    {% for skill in site.data.skills.use %}
-      <span class="post-category post-category-safety">{{ skill }}</span>
+  <h1 class="content-subhead">Toolbox</h1>
+  <ul class="skills-list">
+    {% for skill in site.data.skills.primary %}
+    <li>
+      <span class="skill-name">{{ skill.name }}: </span>
+      {{ skill.value | join: ', ' }}
+    </li>
     {% endfor %}
-
-    <h4 class="skill-group">Stuff I like</h4>
-    {% for skill in site.data.skills.like %}
-      <span class="post-category post-category-safety">{{ skill }}</span>
-    {% endfor %}
-
-    <h4 class="skill-group">Hobbies</h4>
-    {% for skill in site.data.skills.hobbies %}
-      <span class="post-category post-category-safety">{{ skill }}</span>
-    {% endfor %}
-  </div>
+  </ul>
 </div>

@@ -1,13 +1,15 @@
 primary:
   - name: Languages
-    value: [Clojure, C++, Rust]
+    value: [Clojure, Modern C++, Rust]
   - name: Libraries
-    value: [OpenGL, React Native]
+    value: [OpenGL, React Native, re-frame]
+  - name: Engines
+    value: [Unity3D, OGRE]
+  - name: Services
+    value: [Heroku, Firebase]
+  - name: Programs
+    value: [Radare2, GDB]
   - name: OS-related
     value: [GNU/Linux, Mac OS, Nix]
   - name: Social
     value: [Mentoring, Crucial Conversations]
-
-use: [Radare2, Rust]
-like: [FOSS, Type Systems, Vim]
-hobbies: [Reverse Engineering, IRC, Linux Administration, Piano]
