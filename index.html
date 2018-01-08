@@ -40,12 +40,25 @@ nav-about-class: current
     <ul class="skills-list">
       {% for skill in site.data.skills.primary %}
       <li>
-        {{ skill.name }}
+        <span class="skill-name">{{ skill.name }}: </span>
+        {{ skill.value | join: ', ' }}
       </li>
       {% endfor %}
     </ul>
-    <p><span class="skill-group">Other stuff I use</span>: {{ site.data.skills.use  | join: ', ' }}</p>
-    <p><span class="skill-group">Stuff I like</span>: {{ site.data.skills.like  | join: ', ' }}</p>
-    <p><span class="skill-group">Hobbies</span>: {{ site.data.skills.hobbies  | join: ', ' }}</p>
+
+    <h4 class="skill-group">Other stuff I use</h4>
+    {% for skill in site.data.skills.use %}
+      <span class="post-category post-category-safety">{{ skill }}</span>
+    {% endfor %}
+
+    <h4 class="skill-group">Stuff I like</h4>
+    {% for skill in site.data.skills.like %}
+      <span class="post-category post-category-safety">{{ skill }}</span>
+    {% endfor %}
+
+    <h4 class="skill-group">Hobbies</h4>
+    {% for skill in site.data.skills.hobbies %}
+      <span class="post-category post-category-safety">{{ skill }}</span>
+    {% endfor %}
   </div>
 </div>

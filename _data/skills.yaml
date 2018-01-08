@@ -1,14 +1,12 @@
 primary:
-  - name: Clojure
-    amount: 85
-  - name: C++
-    amount: 95
-  - name: OpenGL
-    amount: 65
-  - name: GNU/Linux
-    amount: 95
-  - name: Mentoring
-    amount: 90
+  - name: Languages
+    value: [Clojure, C++, Rust]
+  - name: Libraries
+    value: [OpenGL, React Native]
+  - name: OS-related
+    value: [GNU/Linux, Mac OS, Nix]
+  - name: Social
+    value: [Mentoring, Crucial Conversations]
 
 use: [Radare2, Rust]
 like: [FOSS, Type Systems, Vim]

@@ -166,7 +166,7 @@ a:focus {
 .post-category-tutorial {
   background: #df2d4f;
 }
-.post h1,h2,h3 {
+.post h1,h2,h3,h4 {
   color: #222;
 }
 
@@ -225,4 +225,9 @@ figcaption {
 }
 .skill-group {
   font-weight: bold;
+}
+.skill-name {
+  font-size: 80%;
+  font-weight: bold;
+  color: #222;
 }
