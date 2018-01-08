@@ -1,0 +1,8 @@
+channels:
+  - name: Email
+    value: contact@thisdomain
+  - name: LinkedIn
+    link: true
+    value: https://linkedin.com/in/jeaye
+  - name: IRC
+    value: jeaye on freenode
