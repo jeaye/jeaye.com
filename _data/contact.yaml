@@ -4,5 +4,8 @@ channels:
   - name: LinkedIn
     link: true
     value: https://linkedin.com/in/jeaye
+  - name: AngelList
+    link: true
+    value: https://angel.co/jeaye
   - name: IRC
     value: jeaye on freenode
