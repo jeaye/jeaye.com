@@ -6,8 +6,8 @@ set -eu
 
 node ./node_modules/sprity-cli/index.js \
     create ./img img-partial/*.png \
+    -e sprity-jimp \
     -s sprite-sheet.css \
     -c /img \
     -n sprite-sheet
-#mv -f ./img/sprite-sheet.png ./img/sprite-sheet.png
 mv -f ./img/sprite-sheet.css ./css-partial/sprite-sheet.scss
