@@ -21,4 +21,4 @@ kramdown:
   input: GFM
   syntax_highligher: rouge
 
-exclude: [.bundle, vendor, Gemfile, Gemfile.lock, node_modules, img-partial, css-partial, generate-sprite-sheet, run, publish, blog]
+exclude: [.bundle, vendor, Gemfile, Gemfile.lock, node_modules, img-partial, css-partial, generate-sprite-sheet, run, publish, blog, package.json, package-lock.json]
