@@ -1,6 +1,6 @@
 primary:
   - name: Languages
-    value: [Clojure, Modern C++, Rust]
+    value: [Clojure, Modern C++, C#, Rust]
   - name: Libraries
     value: [OpenGL, React Native, re-frame]
   - name: Engines
