@@ -1,6 +1,7 @@
 gems:
   - octopress-minify-html
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 permalink: pretty
 home_url: "https://jeaye.com"
@@ -10,6 +11,12 @@ blog_url: "https://blog.jeaye.com"
 url: "https://jeaye.com"
 license_url: "https://github.com/jeaye/jeaye.com/blob/gh-pages/LICENSE"
 tagline: "I'm a systems-level functional programmer with a passion for safety and security."
+
+social:
+  name: Jeaye Wilkerson
+  links:
+    - https://www.linkedin.com/in/jeaye
+    - https://github.com/jeaye
 
 # TODO: Setup a nice font
 sass:
