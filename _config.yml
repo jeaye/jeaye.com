@@ -1,6 +1,6 @@
 gems:
-  - octopress-minify-html
   - jekyll-seo-tag
+  - octopress-minify-html
 
 permalink: pretty
 home_url: "https://jeaye.com"
@@ -15,6 +15,10 @@ tagline: "I'm a systems-level functional programmer with a passion for safety an
 sass:
   sass_dir: css-partial
   style: compressed
+
+# This is a hack to allow me to include anything in the repo. I use it to inline
+# css in the header.
+includes_dir: .
 
 markdown: kramdown
 kramdown:

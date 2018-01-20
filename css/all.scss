@@ -1,7 +1,7 @@
----
-# Front matter comment to ensure Jekyll properly reads this.
----
-
 @import "neo";
 @import "sprite-sheet";
 @import "syntax";
+
+/* Pure CSS */
+@import "pure-min";
+@import "grids-responsive-min";
