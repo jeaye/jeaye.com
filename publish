@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
-set -eu
+set -euo pipefail
+
+here="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 cleanup()
 {
@@ -10,8 +12,7 @@ trap cleanup EXIT
 
 rm -rf ./_site
 
-# TODO: https://github.com/Ensighten/grunt-spritesmith
-#./generate-sprite-sheet
+"$here/generate-sprite-sheet"
 
 export JEKYLL_ENV=production
 bundle-2.3 exec jekyll build
@@ -23,11 +24,12 @@ do
 done
 
 tmp=$(mktemp -d)
+echo "building in $tmp"
 cp -r _site/* "$tmp"/
 cp -r .git "$tmp"/
-pushd "$tmp"
-  git checkout -B gh-pages
-  git add .
-  git commit -am "Publish updates"
-  git push -f origin HEAD
-popd
+#pushd "$tmp"
+#  git checkout -B gh-pages
+#  git add .
+#  git commit -am "Publish updates"
+#  git push -f origin HEAD
+#popd
