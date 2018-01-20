@@ -5,10 +5,9 @@ set -eu
 [ ! -d ./node_modules ] && npm install
 
 node ./node_modules/sprity-cli/index.js \
-    create _assets/img _assets/img-partial/*.png \
+    create ./img img-partial/*.png \
     -e sprity-jimp \
     -s sprite-sheet.css \
-    -c "" \
+    -c /img \
     -n sprite-sheet
-mv -f _assets/img/sprite-sheet.css _assets/css/sprite.scss
-sed -i 's/: url/: asset_url/' _assets/css/sprite.scss
+mv -f ./img/sprite-sheet.css ./css-partial/sprite-sheet.scss
