@@ -29,9 +29,9 @@ tmp=$(mktemp -d)
 echo "building in $tmp"
 cp -r _site/* "$tmp"/
 cp -r .git "$tmp"/
-#pushd "$tmp"
-#  git checkout -B gh-pages
-#  git add .
-#  git commit -am "Publish updates"
-#  git push -f origin HEAD
-#popd
+pushd "$tmp"
+  git checkout -B gh-pages
+  git add .
+  git commit -am "Publish updates"
+  git push -f origin HEAD
+popd
