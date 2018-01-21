@@ -90,14 +90,9 @@ a:focus {
   border-bottom: 1px solid #eee;
 }
 
-.main-content {
-  padding: 2em 0 0 0;
-}
-.toolbox-content {
-  padding: 2em 3em 0 0;
-}
 .main-content,
 .toolbox-content {
+  margin-top: 2em;
   margin-left: auto;
   margin-right: auto;
 }
@@ -118,6 +113,7 @@ a:focus {
 }
 
 .posts {
+  display: block !important;
   margin: auto;
 }
 .post {
@@ -217,7 +213,7 @@ figcaption {
 .skills-list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding: 0 3em 0 0;
 }
 .skills-list li {
   padding: 1em 0;
