@@ -9,8 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.tagline }}">
 
-    {% capture include_to_sassify %}{% include css/all.scss %}{% endcapture %}
-    <style>{{ include_to_sassify | scssify }}</style>
+    <style>{% asset all.css @inline %}</style>
 
     <link type="application/atom+xml" rel="alternate" href="{{ site.blog_url }}/feed.xml" title="{{ site.blog_url }}/feed.xml" />
 

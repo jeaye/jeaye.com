@@ -18,5 +18,8 @@ Gemfile.lock
 node_modules
 
 # Generated files
-sprite-sheet.scss
+sprite.scss
 sprite-sheet.png
+
+# Assets
+.asset-cache

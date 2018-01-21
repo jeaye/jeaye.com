@@ -1,5 +1,6 @@
 gems:
   - jekyll-seo-tag
+  - jekyll-assets
   - octopress-minify-html
 
 permalink: pretty
@@ -12,17 +13,14 @@ license_url: "https://github.com/jeaye/jeaye.com/blob/gh-pages/LICENSE"
 tagline: "I'm a systems-level functional programmer with a passion for safety and security."
 
 # TODO: Setup a nice font
-sass:
-  sass_dir: css-partial
-  style: compressed
 
-# This is a hack to allow me to include anything in the repo. I use it to inline
-# css in the header.
-includes_dir: .
+assets:
+  # Generate files with names based on their content hash.
+  digest: true
 
 markdown: kramdown
 kramdown:
   input: GFM
   syntax_highligher: rouge
 
-exclude: [.bundle, vendor, Gemfile, Gemfile.lock, node_modules, img-partial, css-partial, generate-sprite-sheet, run, publish, blog, package.json, package-lock.json]
+exclude: [.bundle, .asset-cache, vendor, Gemfile, Gemfile.lock, node_modules, img-partial, css-partial, generate-sprite-sheet, run, publish, blog, package.json, package-lock.json]
