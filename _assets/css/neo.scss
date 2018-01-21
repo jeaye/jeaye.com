@@ -196,11 +196,14 @@ figure {
 }
 
 figure img {
-  width: 66%;
   border: 1px solid rgba(50, 50, 50, 0.5);
   border-radius: 2px;
   padding: 5px;
   background: #fff;
+}
+
+.figure-2-3 {
+  width: 66%;
 }
 
 figcaption {
@@ -209,10 +212,6 @@ figcaption {
   text-align: center;
   display: inline-block !important;
   width: 66%;
-}
-
-.real-size-figure {
-  width: auto;
 }
 
 .skills-list {

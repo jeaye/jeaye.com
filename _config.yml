@@ -16,6 +16,9 @@ tagline: "I'm a systems-level functional programmer with a passion for safety an
 assets:
   # Generate files with names based on their content hash.
   digest: true
+  features:
+    automatic_img_size: false
+    automatic_img_alt : false
 
 markdown: kramdown
 kramdown:
