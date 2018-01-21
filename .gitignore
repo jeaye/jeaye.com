@@ -22,4 +22,4 @@ sprite.scss
 sprite-sheet.png
 
 # Assets
-.asset-cache
+.jekyll-cache

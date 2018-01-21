@@ -2,7 +2,9 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/png" href="{{ site.home_url }}/img/favicon.png">
+    <link rel="icon"
+          type="{{ assets["favicon.png"].content_type }}"
+          href="{{ site.url }}{% asset favicon.png @path %}">
 
     <meta name="author" content="jeaye" />
     <meta name="keywords" content="jeaye,jesse,wilkerson,c++,modern,software,functional,clojure,programming,{{ page.tags  | join: ', ' }}" />
