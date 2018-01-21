@@ -20,7 +20,7 @@ export JEKYLL_ENV=production
 bundle-2.3 exec jekyll build
 
 # TODO: Check for optipng and fail if not present
-for img in _site/img/*.png;
+for img in $(find _site/img -name '*.png');
 do
   optipng -q "$img"
 done
