@@ -12,7 +12,9 @@ trap cleanup EXIT
 
 rm -rf ./_site
 
-"$here/generate-sprite-sheet"
+pushd "$here"
+  ./generate-sprite-sheet
+popd
 
 export JEKYLL_ENV=production
 bundle-2.3 exec jekyll build
