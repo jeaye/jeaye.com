@@ -11,4 +11,4 @@ node ./node_modules/sprity-cli/index.js \
     -c "" \
     -n sprite-sheet
 mv -f _assets/img/sprite-sheet.css _assets/css/sprite.scss
-sed -i 's/: url/: asset_url/' _assets/css/sprite.scss
+sed -i 's/.*: url.*//' _assets/css/sprite.scss
