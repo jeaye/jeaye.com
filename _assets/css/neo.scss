@@ -141,10 +141,12 @@ a:focus {
 .post-date {
   color: #444;
   float: right;
+  text-align: right;
 }
 .post-updated-date {
   color: #5aba59;
   font-size: 90%;
+  font-style: italic;
 }
 .post-category {
   margin: 0 0.1em;
