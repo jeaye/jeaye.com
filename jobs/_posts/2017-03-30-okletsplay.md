@@ -1,7 +1,7 @@
 ---
 title: Co-founder, CTO
 company: OkLetsPlay
-company-url: https://angel.co/okletsplay
+company-url: https://okletsplay.com
 start: April 2017
 end: Present
 ---
