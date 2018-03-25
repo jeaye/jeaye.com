@@ -97,6 +97,11 @@ a:focus {
   margin-right: auto;
 }
 
+.main-content {
+  /* On monitors like 4k, taking up 3/4 is just too much. */
+  max-width: 1280px;
+}
+
 .job-title {
   font-size: 2em;
   color: #222;
