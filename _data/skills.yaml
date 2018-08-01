@@ -6,9 +6,9 @@ primary:
   - name: Engines
     value: [Unity3D, OGRE]
   - name: Services
-    value: [Heroku, Firebase]
+    value: [Deepstream, Firebase, Heroku]
   - name: Programs
-    value: [Radare2, GDB]
+    value: [Vim, Radare2, GDB]
   - name: OS-related
     value: [GNU/Linux, Mac OS, Nix]
   - name: Social
