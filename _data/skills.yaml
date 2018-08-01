@@ -8,7 +8,7 @@ primary:
   - name: Services
     value: [Deepstream, Firebase, Heroku]
   - name: Programs
-    value: [Vim, Radare2, GDB]
+    value: [Vim, Git, Radare2]
   - name: OS-related
     value: [GNU/Linux, Mac OS, Nix]
   - name: Social
