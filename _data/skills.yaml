@@ -6,7 +6,7 @@ primary:
   - name: Engines
     value: [Unity3D, OGRE, Cocos2d-x]
   - name: Services
-    value: [Docker, Keycloak, Postgres]
+    value: [Docker, Keycloak, PostgreSQL]
   - name: Programs
     value: [Vim, Git, Radare2, GNU Tools]
   - name: OS-related
