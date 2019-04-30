@@ -17,7 +17,7 @@ pushd "$here"
 popd
 
 export JEKYLL_ENV=production
-bundle-2.3 exec jekyll build
+bundle-2.5 exec jekyll build
 
 # TODO: Check for optipng and fail if not present
 for img in $(find _site/img -type f -name '*.png');
