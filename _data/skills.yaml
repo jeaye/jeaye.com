@@ -1,15 +1,15 @@
 primary:
   - name: Languages
-    value: [Clojure, Modern C++, C#, Rust]
+    value: [Clojure, C++, C#, Rust, Bash]
   - name: Libraries
-    value: [OpenGL, React Native, re-frame]
+    value: [OpenGL, React, Overwolf]
   - name: Engines
-    value: [Unity3D, OGRE]
+    value: [Unity3D, OGRE, Cocos2d-x]
   - name: Services
-    value: [Deepstream, Firebase, Heroku]
+    value: [Docker, Keycloak, Postgres]
   - name: Programs
-    value: [Vim, Git, Radare2]
+    value: [Vim, Git, Radare2, GNU Tools]
   - name: OS-related
-    value: [GNU/Linux, Mac OS, Nix]
+    value: [GNU/Linux, macOS, NixOS]
   - name: Social
     value: [Mentoring, Crucial Conversations]
