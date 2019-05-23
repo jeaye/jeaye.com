@@ -8,4 +8,4 @@ pushd "$here"
   ./generate-sprite-sheet
 popd
 
-bundle-2.3 exec jekyll serve --host 0.0.0.0 "$@"
+bundle-2.5 exec jekyll serve --host 0.0.0.0 "$@"
