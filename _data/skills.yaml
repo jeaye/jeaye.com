@@ -2,11 +2,9 @@ primary:
   - name: Languages
     value: [Clojure, C++, C#, Rust, Bash]
   - name: Libraries
-    value: [OpenGL, React, Overwolf]
+    value: [OpenGL, React]
   - name: Engines
     value: [Unity3D, OGRE, Cocos2d-x]
-  - name: Services
-    value: [Docker, Keycloak, PostgreSQL]
   - name: Programs
     value: [Vim, Git, Radare2, GNU Tools]
   - name: OS-related
