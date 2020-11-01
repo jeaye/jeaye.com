@@ -1,9 +1,0 @@
-{
-  "dependencies": {
-    "pajk-lwip": "latest",
-    "sprity": "git://github.com/nealfennimore/sprity.git",
-    "sprity-cli": "latest",
-    "sprity-gm": "latest",
-    "sprity-jimp": "latest"
-  }
-}
