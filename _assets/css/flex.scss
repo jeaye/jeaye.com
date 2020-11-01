@@ -1,0 +1,324 @@
+/* Global bits. */
+*
+{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+body
+{
+  display: flex;
+  flex-flow: column nowrap;
+  margin: 0;
+  font-family: sans-serif;
+}
+a
+{
+  text-decoration: none;
+  color: rgb(61, 146, 201);
+}
+a:hover,
+a:focus
+{
+  text-decoration: underline;
+}
+
+/* Header. */
+.header
+{
+  display: flex;
+  flex: 1;
+  flex-flow: column wrap;
+  align-items: center;
+  margin: 0;
+  padding: 2em 40px 2em 40px;
+  text-align: center;
+  background: rgb(61, 79, 93);
+  color: #aaa;
+}
+.header-inner
+{
+  display: flex;
+  flex-flow: row wrap;
+}
+.header-description
+{
+  flex: 2;
+  text-align: left;
+  max-width: 700px;
+}
+.header-icon
+{
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}
+.header-title,
+.header-short-pitch
+{
+  margin: 0;
+}
+.header-short-pitch
+{
+  font-weight: 300;
+  color: rgb(176, 202, 219);
+}
+.header-name
+{
+  font-size: 2.5em;
+  color: #222;
+}
+
+/* Nav bar. */
+.nav
+{
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  padding-top: 1em;
+}
+.nav-item
+{
+  display: flex;
+  flex: 1;
+  padding: 0 0.25em;
+  white-space: nowrap;
+}
+.nav-item a
+{
+  background: transparent;
+  border: 2px solid rgb(176, 202, 219);
+  color: #fff;
+  margin-top: 1em;
+  padding: 6px 14px;
+  letter-spacing: 0.05em;
+  font-size: 85%;
+}
+.nav-item a:hover,
+.nav-item a:focus
+{
+  border: 2px solid rgb(61, 146, 201);
+  text-decoration: none;
+}
+.special-nav-item a
+{
+  border: 2px solid #c2a086;
+}
+.special-nav-item a:hover,
+.special-nav-item a:focus
+{
+  border: 2px solid #c26d36;
+}
+
+/* Panels. */
+.panel-h-box
+{
+  display: flex;
+  flex: 1;
+  flex-flow: row wrap;
+  gap: 10em;
+  justify-content: center;
+  margin: 0 3em 0 3em;
+}
+.panel-v-box
+{
+  display: flex;
+  flex-flow: column wrap;
+}
+.panel-gap
+{
+  min-width: 10em;
+}
+.panel-subhead
+{
+  text-transform: uppercase;
+  color: #aaa;
+  padding: 0;
+  font-size: 80%;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+}
+.main-panel,
+.toolbox-panel,
+.pgp-panel,
+.what-i-do-panel
+{
+  margin-top: 2em;
+}
+.main-panel
+{
+  display: flex;
+  flex: 2;
+  max-width: 1280px;
+  min-width: 400px;
+}
+.toolbox-panel
+{
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  max-width: 400px;
+  min-width: 200px;
+}
+.what-i-do-panel
+{
+  display: flex;
+  flex: 2;
+  flex-flow: column nowrap;
+  min-width: 400px;
+  max-width: 900px;
+}
+
+.what-i-do-h-box
+{
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 4em;
+  margin-top: 1em;
+}
+.what-i-do-thing
+{
+  flex: 1;
+}
+.what-i-do-thing-title
+{
+  font-size: 1.0em;
+  line-height: 0.5em;
+}
+.what-i-do-title
+{
+  font-size: 1.0em;
+  line-height: 0.5em;
+  color: rgb(68, 56, 67);
+  text-transform: uppercase;
+  margin-bottom: 2em;
+}
+.what-i-do-big
+{
+  font-size: 2.5em;
+  line-height: 1em;
+  font-weight: bold;
+  color: #222;
+}
+
+/* Jobs. */
+.job-title
+{
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 0.2em;
+}
+.job-at
+{
+  color: #999;
+  font-size: 80%;
+  font-weight: 500;
+}
+.job-company
+{
+  color: rgb(61, 146, 201);
+  font-size: 90%;
+}
+
+/* Posts. */
+.posts
+{
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+.post
+{
+  padding-bottom: 2em;
+}
+.post-header
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.post-title
+{
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 0.2em;
+}
+.post-title a
+{
+  color: #222;
+  text-decoration-color: #222;
+}
+.post-description
+{
+  font-family: Georgia, "Cambria", serif;
+  color: #444;
+  line-height: 1.8em;
+}
+.post-meta
+{
+  color: #999;
+  font-size: 90%;
+  margin: 0;
+}
+.post-date
+{
+  color: #444;
+  text-align: right;
+}
+.post-updated-date
+{
+  color: #5aba59;
+  font-size: 90%;
+  font-style: italic;
+}
+.post-category
+{
+  margin: 0 0.1em;
+  padding: 0.3em 1em;
+  color: #fff;
+  background: #999;
+  font-size: 80%;
+}
+.post-category-review
+{
+  background: #5aba59;
+}
+.post-category-privacy,
+.post-category-security
+{
+  background: #4d85d1;
+}
+.post-category-rant
+{
+  background: #8156a7;
+}
+.post-category-tutorial
+{
+  background: #df2d4f;
+}
+.post h1,h2,h3,h4
+{
+  color: #222;
+}
+
+/* Toolbox skills. */
+.skills
+{
+  margin: 0;
+  padding: 0 3em 0 0;
+}
+.skill
+{
+  padding: 1em 0;
+  border-bottom: 1px solid #ccc;
+}
+.skill:last-child
+{
+  border: none !important;
+}
+.skill-name
+{
+  font-size: 80%;
+  font-weight: bold;
+  color: #222;
+}

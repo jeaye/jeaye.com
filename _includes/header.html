@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8"/>
     <link rel="icon"
           type="{{ assets["favicon.png"].content_type }}"
           href="{{ site.url }}{% asset favicon.png @path %}">
 
     <meta name="author" content="jeaye" />
-    <meta name="keywords" content="jeaye,jesse,wilkerson,c++,modern,software,functional,clojure,programming,{{ page.tags  | join: ', ' }}" />
+    <meta name="keywords" content="jeaye,jesse,wilkerson,c++,modern,engineering,manager,software,functional,clojure,programming,{{ page.tags  | join: ', ' }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="{{ site.tagline }}">
+    <meta name="description" content="{{ site.short_pitch }}">
 
     <style>
     .icon {
@@ -18,45 +18,42 @@
     </style>
     {% asset all.css @inline %}
 
-    <link type="application/atom+xml" rel="alternate" href="{{ site.blog_url }}feed.xml" title="{{ site.blog_url }}feed.xml" />
+    <link type="application/atom+xml" rel="alternate" href="{{ site.blog_url }}feed.xml" title="{{ site.blog_url }}feed.xml"/>
 
-    {% seo %}
   </head>
 
   <body>
-    <div class="pure-g">
-      <div class="header pure-u-1">
-        <div class="pure-g">
-          <div class="header-inner pure-u-1 pure-u-md-3-4">
-            <div class="header-item pure-u-1 pure-u-md-1-2">
-              <h1 class="header-title">My name is <span class="header-name">Jeaye</span></h1>
-              <h2 class="header-tagline">{{ site.tagline }}</h2>
-            </div>
-            <div class="header-item pure-u-1-4">
-              <div class="icon icon-j"></div>
-            </div>
-          </div>
+    <div class="header">
+      <div class="header-inner">
+        <div class="header-description">
+          <h1 class="header-title">My name is <span class="header-name">Jeaye</span></h1>
+          <h2 class="header-short-pitch">{{ site.short_pitch }}</h2>
         </div>
-
-        <nav class="nav">
-          <ul class="nav-list">
-            <li class="nav-item">
-              <a class="pure-button" href="{{ site.home_url }}">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="pure-button" href="https://github.com/jeaye">Github</a>
-            </li>
-            <li class="nav-item">
-              <a class="pure-button" href="{{ site.blog_url }}">Blog</a>
-            </li>
-            <li class="nav-item">
-              <a class="pure-button" href="{{ site.home_url }}contact">Contact</a>
-            </li>
-            <!--
-            <li class="nav-item">
-              <a class="pure-button" href="{{ site.home_url }}resume.pdf">Résumé</a>
-            </li>
-            -->
-          </ul>
-        </nav>
+        <div class="header-icon">
+          <div class="icon icon-j"></div>
+        </div>
       </div>
+
+      <nav class="nav">
+        <div class="nav-item">
+          <a href="{{ site.home_url }}">About</a>
+        </div>
+        <div class="nav-item">
+          <a href="https://github.com/jeaye">Github</a>
+        </div>
+        <div class="nav-item">
+          <a href="{{ site.blog_url }}">Blog</a>
+        </div>
+        <div class="nav-item">
+          <a href="{{ site.home_url }}contact">Contact</a>
+        </div>
+        <div class="nav-item special-nav-item">
+          <a href="{{ site.home_url }}contact">Hire Me!</a>
+        </div>
+        <!--
+          <div class="nav-item">
+            <a href="{{ site.home_url }}resume.pdf">Résumé</a>
+          </div>
+        -->
+      </nav>
+    </div>

@@ -10,8 +10,7 @@ blog_url: "https://blog.jeaye.com/"
 url: "https://jeaye.com/"
 license_url: "https://github.com/jeaye/jeaye.com/blob/gh-pages/LICENSE"
 title: "Jeaye (Co-founder, CTO at OkLetsPlay)"
-tagline: "I'm a leader, a problem solver, and a hacker with a passion for privacy and security."
-description: "I'm a leader, a problem solver, and a hacker with a passion for privacy and security."
+short_pitch: "I'm a leader, a problem solver, and a hacker with a passion for privacy and security."
 
 # TODO: Setup a nice font
 
