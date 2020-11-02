@@ -15,7 +15,10 @@ body
 a
 {
   text-decoration: none;
-  color: rgb(61, 146, 201);
+  @include themify($themes)
+  {
+    color: themed('anchor-color');
+  }
 }
 a:hover,
 a:focus
@@ -33,8 +36,12 @@ a:focus
   margin: 0;
   padding: 2em 40px 2em 40px;
   text-align: center;
-  background: rgb(61, 79, 93);
-  color: #aaa;
+
+  @include themify($themes)
+  {
+    background: themed('header-background');
+    color: themed('subtitle-color');
+  }
 }
 .header-inner
 {
@@ -61,12 +68,20 @@ a:focus
 .header-short-pitch
 {
   font-weight: 300;
-  color: rgb(176, 202, 219);
+
+  @include themify($themes)
+  {
+    color: themed('header-short-pitch-color');
+  }
 }
 .header-name
 {
   font-size: 2.5em;
-  color: #222;
+
+  @include themify($themes)
+  {
+    color: themed('title-color');
+  }
 }
 
 /* Nav bar. */
@@ -88,11 +103,15 @@ a:focus
 {
   background: transparent;
   border: 2px solid rgb(176, 202, 219);
-  color: #fff;
   margin-top: 1em;
   padding: 6px 14px;
   letter-spacing: 0.05em;
   font-size: 85%;
+
+  @include themify($themes)
+  {
+    color: themed('nav-item-anchor-color');
+  }
 }
 .nav-item a:hover,
 .nav-item a:focus
@@ -132,11 +151,15 @@ a:focus
 .panel-subhead
 {
   text-transform: uppercase;
-  color: #aaa;
   padding: 0;
   font-size: 80%;
   font-weight: 500;
   letter-spacing: 0.1em;
+
+  @include themify($themes)
+  {
+    color: themed('subtitle-color');
+  }
 }
 .main-panel,
 .toolbox-panel,
@@ -190,35 +213,55 @@ a:focus
 {
   font-size: 1.0em;
   line-height: 0.5em;
-  color: rgb(68, 56, 67);
   text-transform: uppercase;
   margin-bottom: 2em;
+
+  @include themify($themes)
+  {
+    color: themed('what-i-do-color');
+  }
 }
 .what-i-do-big
 {
   font-size: 2.5em;
   line-height: 1em;
   font-weight: bold;
-  color: #222;
+
+  @include themify($themes)
+  {
+    color: themed('title-color');
+  }
 }
 
 /* Jobs. */
 .job-title
 {
   font-size: 2em;
-  color: #222;
   margin-bottom: 0.2em;
+
+  @include themify($themes)
+  {
+    color: themed('title-color');
+  }
 }
 .job-at
 {
-  color: #999;
   font-size: 80%;
   font-weight: 500;
+
+  @include themify($themes)
+  {
+    color: themed('job-at-color');
+  }
 }
 .job-company
 {
-  color: rgb(61, 146, 201);
   font-size: 90%;
+
+  @include themify($themes)
+  {
+    color: themed('anchor-color');
+  }
 }
 
 /* Posts. */
@@ -242,45 +285,72 @@ a:focus
 .post-title
 {
   font-size: 2em;
-  color: #222;
   margin-bottom: 0.2em;
+
+  @include themify($themes)
+  {
+    color: themed('title-color');
+  }
 }
 .post-title a
 {
-  color: #222;
-  text-decoration-color: #222;
+  @include themify($themes)
+  {
+    color: themed('title-color');
+    text-decoration-color: themed('title-color');
+  }
 }
 .post-description
 {
   font-family: Georgia, "Cambria", serif;
-  color: #444;
   line-height: 1.8em;
+
+  @include themify($themes)
+  {
+    color: themed('post-description-color');
+  }
 }
 .post-meta
 {
-  color: #999;
   font-size: 90%;
   margin: 0;
+
+  @include themify($themes)
+  {
+    color: themed('post-meta-color');
+  }
 }
 .post-date
 {
-  color: #444;
   text-align: right;
   white-space: nowrap;
+
+  @include themify($themes)
+  {
+    color: themed('post-date-color');
+  }
 }
 .post-updated-date
 {
-  color: #5aba59;
   font-size: 90%;
   font-style: italic;
+
+  @include themify($themes)
+  {
+    color: themed('post-updated-color');
+  }
 }
 .post-category
 {
   margin: 0 0.1em;
   padding: 0.3em 1em;
-  color: #fff;
   background: #999;
   font-size: 80%;
+
+  @include themify($themes)
+  {
+    color: themed('post-category-color');
+  }
 }
 .post-category-review
 {
@@ -301,7 +371,10 @@ a:focus
 }
 .post h1,h2,h3,h4
 {
-  color: #222;
+  @include themify($themes)
+  {
+    color: themed('title-color');
+  }
 }
 
 /* Toolbox skills. */
@@ -325,7 +398,11 @@ a:focus
 {
   font-size: 80%;
   font-weight: bold;
-  color: #222;
+
+  @include themify($themes)
+  {
+    color: themed('title-color');
+  }
 }
 
 /***** Blog *****/
@@ -364,13 +441,20 @@ a:focus
 .related-post-title
 {
   font-size: 1em;
-  color: #222;
   margin-bottom: 0.2em;
+
+  @include themify($themes)
+  {
+    color: themed('title-color');
+  }
 }
 .related-post-title a
 {
-  color: #222;
-  text-decoration-color: #222;
+  @include themify($themes)
+  {
+    color: themed('title-color');
+    text-decoration-color: themed('title-color');
+  }
 }
 
 /* Figures. */
