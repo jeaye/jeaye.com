@@ -6,13 +6,15 @@
           type="{{ assets["favicon.png"].content_type }}"
           href="{{ site.url }}{% asset favicon.png @path %}">
 
+    <title>{{ site.title }}</title>
     <meta name="author" content="jeaye" />
     <meta name="keywords" content="jeaye,jesse,wilkerson,c++,modern,engineering,manager,software,functional,clojure,programming,{{ page.tags  | join: ', ' }}" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="{{ site.short_pitch }}">
 
     <style>
-    .icon {
+    .icon
+    {
       background-image: url({% asset sprite-sheet.png @path %}) !important;
     }
     </style>
