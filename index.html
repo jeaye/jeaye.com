@@ -36,7 +36,7 @@ layout: index
     <div class="skills">
       {% for skill in site.data.skills.primary %}
       <div class="skill">
-        <span class="skill-name">{{ skill.name }}: </span>
+        <span class="skill-name">{{ skill.name }}</span>
         {{ skill.value | join: ', ' }}
       </div>
       {% endfor %}

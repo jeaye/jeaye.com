@@ -48,7 +48,7 @@ layout: index
       <ul class="skills">
         {% for chan in site.data.contact.channels %}
         <div class="skill">
-          <span class="skill-name">{{ chan.name }}: </span>
+          <span class="skill-name">{{ chan.name }}</span>
           {% if chan.link %}
             <a href="{{ chan.value }}" title="{{ chan.value }}">{{ chan.value }}</a>
           {% else %}

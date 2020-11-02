@@ -141,7 +141,8 @@ a:focus
 .main-panel,
 .toolbox-panel,
 .pgp-panel,
-.what-i-do-panel
+.what-i-do-panel,
+.main-blog-panel
 {
   margin-top: 2em;
 }
@@ -226,6 +227,7 @@ a:focus
   display: flex;
   justify-content: center;
   flex-flow: column nowrap;
+  max-width: 1280px;
 }
 .post
 {
@@ -264,6 +266,7 @@ a:focus
 {
   color: #444;
   text-align: right;
+  white-space: nowrap;
 }
 .post-updated-date
 {
@@ -309,6 +312,8 @@ a:focus
 }
 .skill
 {
+  display: flex;
+  gap: 1em;
   padding: 1em 0;
   border-bottom: 1px solid #ccc;
 }
@@ -321,4 +326,80 @@ a:focus
   font-size: 80%;
   font-weight: bold;
   color: #222;
+}
+
+/***** Blog *****/
+.main-blog-panel
+{
+  display: flex;
+  justify-content: center;
+  margin-left: 10em;
+  margin-right: 10em;
+}
+.blog-header
+{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+.border-bottom
+{
+  border-bottom: 1px solid #eee;
+}
+
+/* Related posts. */
+.related-list
+{
+  list-style-type: none;
+}
+.related-list li
+{
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid #ccc;
+}
+.related-list li:last-child
+{
+  border: none;
+}
+.related-post-title
+{
+  font-size: 1em;
+  color: #222;
+  margin-bottom: 0.2em;
+}
+.related-post-title a
+{
+  color: #222;
+  text-decoration-color: #222;
+}
+
+/* Figures. */
+figure
+{
+  text-align: center;
+  margin: 0 auto;
+}
+figure img
+{
+  border: 1px solid rgba(50, 50, 50, 0.5);
+  border-radius: 2px;
+  padding: 5px;
+  background: #fff;
+}
+.figure-2-3
+{
+  width: 66%;
+}
+figcaption
+{
+  padding: 1em 1em 2em 1em;
+  word-wrap: normal;
+  text-align: center;
+  display: inline-block !important;
+  width: 66%;
+}
+
+code
+{
+  overflow: auto;
 }

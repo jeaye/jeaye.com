@@ -27,11 +27,22 @@ code:not([id='typeans'])
   border: 1px solid;
   border-color: lightgrey;
   border-radius: 5px;
-  white-space: nowrap;
 }
 
-.highlight .lineno { color: #ccc; display:inline-block; padding: 0 5px; border-right:1px solid #ccc; }
-.highlight pre code { display: block; white-space: pre; overflow-x: auto; word-wrap: normal; }
+.highlight .lineno
+{
+  color: #ccc;
+  display: inline-block;
+  padding: 0 5px;
+  border-right: 1px solid #ccc;
+}
+.highlight pre code
+{
+  display: block;
+  white-space: pre-wrap;
+  overflow-x: auto;
+  word-wrap: normal;
+}
 
 .highlight { background-color: #ffffff; color: #586e75; font-size: 1em; }
 .highlight .c { color: #93a1a1 } /* Comment */
