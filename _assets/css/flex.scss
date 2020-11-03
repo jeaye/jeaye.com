@@ -99,7 +99,7 @@ a:focus
   display: flex;
   flex: 1;
   flex-flow: row wrap;
-  padding-top: 1em;
+  padding-top: 0.5em;
 }
 .nav-item
 {
@@ -395,7 +395,9 @@ a:focus
     color: themed('title-color');
   }
 }
-.post p
+.post p,
+.post ol,
+.post ul
 {
   font-family: $serif-font;
 
@@ -403,6 +405,10 @@ a:focus
   {
     color: themed('gentle-body-color');
   }
+}
+.post p a
+{
+  font-weight: 600;
 }
 
 /* Toolbox skills. */

@@ -4,6 +4,7 @@ $serif-font: Georgia, "Cambria", serif;
 $base-theme:
 (
   "anchor-color": #3d92c9,
+  "nav-border-hover-color": #3d92c9,
 
   "header-background": #3d4f5d,
 
@@ -11,8 +12,6 @@ $base-theme:
 
   "header-short-pitch-color": #b0cadb,
   "nav-border-color": #b0cadb,
-
-  "nav-border-hover-color": #3d92c9,
 
   "special-nav-border-color": #c2a086,
   "special-nav-border-hover-color": #c26d36,
@@ -28,6 +27,7 @@ $base-theme:
   "post-updated-color": #5aba59,
 );
 
+/* 130 hue shift. */
 $red-theme:
 (
   "header-background": #5d3d4a,
@@ -39,8 +39,47 @@ $red-theme:
   "anchor-color": #c93d7a,
 );
 
+/* -26 hue shift. */
+$teal-theme:
+(
+  "header-background": #3d5d5d,
+  "header-short-pitch-color": #b0dbd9,
+  "nav-border-color": #b0dbd9,
+  "nav-border-hover-color": #3dc9c3,
+  "special-nav-border-color": #c28686,
+  "special-nav-border-hover-color": #c2363c,
+  /*"anchor-color": #3dc9c3,*/
+  "anchor-color": #c2363c,
+);
+
+/* -80 hue shift. */
+$green-theme:
+(
+  "header-background": #3d5d40,
+  "header-short-pitch-color": #b0dbb3,
+  "nav-border-color": #b0dbb3,
+  "nav-border-hover-color": #3dc945,
+  "special-nav-border-color": #c286bc,
+  "special-nav-border-hover-color": #c236ba,
+  "anchor-color": #3dc945,
+);
+
+$penny-theme:
+(
+  "header-background": #812d39,
+  "header-short-pitch-color": #ffbbcb,
+  "nav-border-color": #ffbbcb,
+  "nav-border-hover-color": #ff1345,
+  "special-nav-border-color": #78af26,
+  "special-nav-border-hover-color": #5d9b00,
+  "anchor-color": #ec331a,
+);
+
 $themes:
 (
   old: $base-theme,
   red: map-merge($base-theme, $red-theme),
+  teal: map-merge($base-theme, $teal-theme),
+  green: map-merge($base-theme, $green-theme),
+  penny: map-merge($base-theme, $penny-theme),
 );
