@@ -111,7 +111,6 @@ a:focus
 .nav-item a
 {
   background: transparent;
-  border: 2px solid rgb(176, 202, 219);
   margin-top: 1em;
   padding: 6px 14px;
   letter-spacing: 0.05em;
@@ -120,22 +119,33 @@ a:focus
   @include themify($themes)
   {
     color: themed('nav-item-anchor-color');
+    border: 2px solid themed('nav-border-color');
   }
 }
 .nav-item a:hover,
 .nav-item a:focus
 {
-  border: 2px solid rgb(61, 146, 201);
   text-decoration: none;
+
+  @include themify($themes)
+  {
+    border: 2px solid themed('nav-border-hover-color');
+  }
 }
 .special-nav-item a
 {
-  border: 2px solid #c2a086;
+  @include themify($themes)
+  {
+    border: 2px solid themed('special-nav-border-color');
+  }
 }
 .special-nav-item a:hover,
 .special-nav-item a:focus
 {
-  border: 2px solid #c26d36;
+  @include themify($themes)
+  {
+    border: 2px solid themed('special-nav-border-hover-color');
+  }
 }
 
 /* Panels. */

@@ -1,29 +1,46 @@
 $sans-font: sans-serif;
 $serif-font: Georgia, "Cambria", serif;
 
+$base-theme:
+(
+  "anchor-color": #3d92c9,
+
+  "header-background": #3d4f5d,
+
+  "subtitle-color": #999,
+
+  "header-short-pitch-color": #b0cadb,
+  "nav-border-color": #b0cadb,
+
+  "nav-border-hover-color": #3d92c9,
+
+  "special-nav-border-color": #c2a086,
+  "special-nav-border-hover-color": #c26d36,
+
+  "title-color": #222,
+  "gentle-body-color": #222,
+
+  "nav-item-anchor-color": #fff,
+  "post-category-color": #fff,
+
+  "what-i-do-color": #443843,
+
+  "post-updated-color": #5aba59,
+);
+
+$red-theme:
+(
+  "header-background": #5d3d4a,
+  "header-short-pitch-color": #dbb0c3,
+  "nav-border-color": #dbb0c3,
+  "nav-border-hover-color": #c93d7a,
+  "special-nav-border-color": #86c2aa,
+  "special-nav-border-hover-color": #36c285,
+  "anchor-color": #c93d7a,
+);
+
 $themes:
 (
-  old:
-  (
-    anchor-color: #3d92c9,
-
-    header-background: #3d4f5d,
-
-    subtitle-color: #999,
-
-    header-short-pitch-color: #b0cadb,
-
-    title-color: #222,
-    gentle-body-color: #222,
-
-    nav-item-anchor-color: #fff,
-    post-category-color: #fff,
-
-    what-i-do-color: #443843,
-
-    post-updated-color: #5aba59,
-  ),
-  dark:
-  (
-  ),
+  old: $base-theme,
+  red: map-merge($base-theme, $red-theme),
 );
