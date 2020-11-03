@@ -29,6 +29,11 @@ code:not([id='typeans'])
   border-radius: 5px;
 }
 
+pre code
+{
+  padding: 5px;
+}
+
 .highlight .lineno
 {
   color: #ccc;
