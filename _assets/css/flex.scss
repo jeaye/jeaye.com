@@ -39,7 +39,6 @@ a:focus
 .header
 {
   display: flex;
-  flex: 1;
   flex-flow: column wrap;
   align-items: center;
   margin: 0;
@@ -97,15 +96,14 @@ a:focus
 .nav
 {
   display: flex;
-  flex: 1;
   flex-flow: row wrap;
+  gap: 0.5em;
   padding-top: 0.5em;
 }
 .nav-item
 {
   display: flex;
   flex: 1;
-  padding: 0 0.25em;
   white-space: nowrap;
 }
 .nav-item a
