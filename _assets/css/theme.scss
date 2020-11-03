@@ -1,3 +1,6 @@
+$sans-font: sans-serif;
+$serif-font: Georgia, "Cambria", serif;
+
 $themes:
 (
   old:
@@ -6,22 +9,17 @@ $themes:
 
     header-background: #3d4f5d,
 
-    subtitle-color: #aaa,
+    subtitle-color: #999,
 
     header-short-pitch-color: #b0cadb,
 
     title-color: #222,
+    gentle-body-color: #222,
 
     nav-item-anchor-color: #fff,
     post-category-color: #fff,
 
     what-i-do-color: #443843,
-
-    job-at-color: #999,
-    post-meta-color: #999,
-
-    post-description-color: #444,
-    post-date-color: #444,
 
     post-updated-color: #5aba59,
   ),

@@ -38,7 +38,9 @@ title: "Jeaye (Co-founder, CTO at OkLetsPlay)"
       {% for skill in site.data.skills.primary %}
       <div class="skill">
         <span class="skill-name">{{ skill.name }}</span>
-        {{ skill.value | join: ', ' }}
+        <span class="gentle-body-color">
+          {{ skill.value | join: ', ' }}
+        </span>
       </div>
       {% endfor %}
     </div>

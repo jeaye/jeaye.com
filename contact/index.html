@@ -50,11 +50,13 @@ title: "Jeaye (Co-founder, CTO at OkLetsPlay)"
         {% for chan in site.data.contact.channels %}
         <div class="skill">
           <span class="skill-name">{{ chan.name }}</span>
-          {% if chan.link %}
-            <a href="{{ chan.value }}" title="{{ chan.value }}">{{ chan.value }}</a>
-          {% else %}
-            {{ chan.value }}
-          {% endif %}
+          <span class="gentle-body-color">
+            {% if chan.link %}
+              <a href="{{ chan.value }}" title="{{ chan.value }}">{{ chan.value }}</a>
+            {% else %}
+              {{ chan.value }}
+            {% endif %}
+          </span>
         </div>
         {% endfor %}
       </ul>
