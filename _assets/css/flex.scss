@@ -17,7 +17,7 @@ a
   text-decoration: none;
   @include themify($themes)
   {
-    color: themed('anchor-color');
+    color: themed("anchor-color");
   }
 }
 a:hover,
@@ -31,7 +31,7 @@ a:focus
 {
   @include themify($themes)
   {
-    color: themed('gentle-body-color');
+    color: themed("gentle-body-color");
   }
 }
 
@@ -47,8 +47,8 @@ a:focus
 
   @include themify($themes)
   {
-    background: themed('header-background');
-    color: themed('subtitle-color');
+    background: themed("header-background");
+    color: themed("subtitle-color");
   }
 }
 .header-inner
@@ -79,7 +79,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('header-short-pitch-color');
+    color: themed("header-short-pitch-color");
   }
 }
 .header-name
@@ -88,7 +88,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('title-color');
+    color: themed("title-color");
   }
 }
 
@@ -116,8 +116,8 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('nav-item-anchor-color');
-    border: 2px solid themed('nav-border-color');
+    color: themed("nav-item-anchor-color");
+    border: 2px solid themed("nav-border-color");
   }
 }
 .nav-item a:hover,
@@ -127,14 +127,14 @@ a:focus
 
   @include themify($themes)
   {
-    border: 2px solid themed('nav-border-hover-color');
+    border: 2px solid themed("nav-border-hover-color");
   }
 }
 .special-nav-item a
 {
   @include themify($themes)
   {
-    border: 2px solid themed('special-nav-border-color');
+    border: 2px solid themed("special-nav-border-color");
   }
 }
 .special-nav-item a:hover,
@@ -142,7 +142,7 @@ a:focus
 {
   @include themify($themes)
   {
-    border: 2px solid themed('special-nav-border-hover-color');
+    border: 2px solid themed("special-nav-border-hover-color");
   }
 }
 
@@ -175,7 +175,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('subtitle-color');
+    color: themed("subtitle-color");
   }
 }
 .main-panel,
@@ -235,7 +235,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('what-i-do-color');
+    color: themed("what-i-do-color");
   }
 }
 .what-i-do-big
@@ -246,7 +246,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('title-color');
+    color: themed("title-color");
   }
 }
 
@@ -258,7 +258,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('title-color');
+    color: themed("title-color");
   }
 }
 .job-at
@@ -268,7 +268,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('subtitle-color');
+    color: themed("subtitle-color");
   }
 }
 .job-company
@@ -277,7 +277,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('anchor-color');
+    color: themed("anchor-color");
   }
 }
 
@@ -306,15 +306,15 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('title-color');
+    color: themed("title-color");
   }
 }
 .post-title a
 {
   @include themify($themes)
   {
-    color: themed('title-color');
-    text-decoration-color: themed('title-color');
+    color: themed("title-color");
+    text-decoration-color: themed("title-color");
   }
 }
 .post-description
@@ -324,7 +324,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('gentle-body-color');
+    color: themed("gentle-body-color");
   }
 }
 .post-meta
@@ -334,7 +334,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('gentle-body-color');
+    color: themed("gentle-body-color");
   }
 }
 .post-date
@@ -344,7 +344,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('post-description-color');
+    color: themed("gentle-body-color");
   }
 }
 .post-updated-date
@@ -354,43 +354,55 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('post-updated-color');
+    color: themed("post-updated-color");
   }
 }
 .post-category
 {
   margin: 0 0.1em;
   padding: 0.3em 1em;
-  background: #999;
   font-size: 80%;
 
   @include themify($themes)
   {
-    color: themed('post-category-color');
+    color: themed("post-category-color");
+    background: themed("post-category-default-background");
   }
 }
 .post-category-review
 {
-  background: #5aba59;
+  @include themify($themes)
+  {
+    background: themed("post-category-review-background");
+  }
 }
 .post-category-privacy,
 .post-category-security
 {
-  background: #4d85d1;
+  @include themify($themes)
+  {
+    background: themed("post-category-security-background");
+  }
 }
 .post-category-rant
 {
-  background: #8156a7;
+  @include themify($themes)
+  {
+    background: themed("post-category-rant-background");
+  }
 }
 .post-category-tutorial
 {
-  background: #df2d4f;
+  @include themify($themes)
+  {
+    background: themed("post-category-tutorial-background");
+  }
 }
 .post h1,h2,h3,h4
 {
   @include themify($themes)
   {
-    color: themed('title-color');
+    color: themed("title-color");
   }
 }
 .post p,
@@ -401,7 +413,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('gentle-body-color');
+    color: themed("gentle-body-color");
   }
 }
 .post p a
@@ -434,7 +446,7 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('title-color');
+    color: themed("title-color");
   }
 }
 
@@ -478,15 +490,15 @@ a:focus
 
   @include themify($themes)
   {
-    color: themed('title-color');
+    color: themed("title-color");
   }
 }
 .related-post-title a
 {
   @include themify($themes)
   {
-    color: themed('title-color');
-    text-decoration-color: themed('title-color');
+    color: themed("title-color");
+    text-decoration-color: themed("title-color");
   }
 }
 

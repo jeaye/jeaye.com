@@ -25,6 +25,12 @@ $base-theme:
   "what-i-do-color": #443843,
 
   "post-updated-color": #5aba59,
+
+  "post-category-default-background": #999,
+  "post-category-review-background": #61b360,
+  "post-category-security-background": #4d85d1,
+  "post-category-rant-background": #8156a7,
+  "post-category-tutorial-background": #bd4f64,
 );
 
 /* 130 hue shift. */
@@ -77,9 +83,9 @@ $penny-theme:
 
 $themes:
 (
-  old: $base-theme,
-  red: map-merge($base-theme, $red-theme),
-  teal: map-merge($base-theme, $teal-theme),
-  green: map-merge($base-theme, $green-theme),
-  penny: map-merge($base-theme, $penny-theme),
+  "old": $base-theme,
+  "red": map-merge($base-theme, $red-theme),
+  "teal": map-merge($base-theme, $teal-theme),
+  "green": map-merge($base-theme, $green-theme),
+  "penny": map-merge($base-theme, $penny-theme),
 );
