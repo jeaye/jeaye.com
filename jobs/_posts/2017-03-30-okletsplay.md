@@ -16,6 +16,6 @@ including research, outreach, and support.
 
 After having built the initial front-end and distributed back-end, we grew the
 team and I ultimately focused primarily on team and project management, as well
-as partner relations. We used ClojureScript + React on the front-end and Clojure
-+ Ring on the back-end. All services were Dockerized and all IO to/from
-  Postgres, Mongo, and other external sources was scheduled by core.async.
+as partner relations. We used ClojureScript & React on the front-end and Clojure
+& Ring on the back-end. All services were Dockerized and all IO to/from
+Postgres, Mongo, and other external sources was scheduled by core.async.
