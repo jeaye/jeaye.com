@@ -4,8 +4,9 @@ channels:
   - name: LinkedIn
     link: true
     value: https://linkedin.com/in/jeaye
-  - name: AngelList
+  - name: Résumé
+    title: Download PDF
     link: true
-    value: https://angel.co/jeaye
+    value: https://jeaye.com/jeaye-wilkerson-resume.pdf
   - name: IRC
-    value: jeaye on freenode
+    value: jeaye on Freenode

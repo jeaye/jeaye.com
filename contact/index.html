@@ -52,7 +52,11 @@ title: "Jeaye (Co-founder, CTO at OkLetsPlay)"
           <span class="skill-name">{{ chan.name }}</span>
           <span class="gentle-body-color">
             {% if chan.link %}
-              <a href="{{ chan.value }}" title="{{ chan.value }}">{{ chan.value }}</a>
+              {% assign title = chan.value %}
+              {% if chan.title %}
+                {% assign title = chan.title %}
+              {% endif %}
+              <a href="{{ chan.value }}" title="{{ title }}">{{ title }}</a>
             {% else %}
               {{ chan.value }}
             {% endif %}
