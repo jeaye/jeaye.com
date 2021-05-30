@@ -3,7 +3,7 @@ title: Co-founder, CTO
 company: OkLetsPlay
 company-url: https://okletsplay.com
 start: July 2016
-end: Present
+end: January 2021
 ---
 
 I managed the software development team of a patented esports tournament and
