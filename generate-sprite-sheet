@@ -1,8 +1,0 @@
-#!/usr/bin/env bash
-
-set -euo pipefail
-
-~/projects/easy-pack/bin/easy-pack -o image,css \
-                                   --image-file _assets/img/sprite-sheet.png \
-                                   --css-file _assets/css/sprite.scss \
-                                   _assets/img-partial/*.png
